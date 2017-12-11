@@ -166,5 +166,21 @@ footer {
 	height: 76px;
 	/*width: 1100px;*/
 	background: #4b73b5;
-	/*float: inherit;
-}*/
+	
+}
+
+.signature__text{
+	color: #ffffff;
+}
+
+.social__text{
+	float: right;
+	margin-top: 20px;
+	margin-right: 21px;
+	color: #ffffff;
+}
+
+}
+.social__item{
+	display: inline-block;
+}
