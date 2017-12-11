@@ -1,0 +1,170 @@
+
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+
+header {
+	height: 76px;
+/*	width: 1100px;*/
+	background: #4b73b5;
+}
+
+.logo, .contacts {
+	display: inline-block;
+}
+
+
+.logo{
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.contacts{
+	float: right;
+	margin-top: 20px;
+	margin-right: 21px; 
+}
+.contacts__phone {
+	font-weight: 700;
+	height: 21px;
+	color: #ffffff;
+}
+
+
+main{
+	text-align: center;
+}
+.left_content{
+	margin-top: 50px;
+	margin-left: 20px;
+	float: left;
+	height: 100%;
+}
+
+.menu__inner{
+	list-style-type: none;
+}
+
+
+.menu__second{
+	margin-top: 38px;
+}
+
+.menu__third{
+	margin-top: 38px;
+}
+
+
+.right_content{
+	margin-top: 50px;
+	margin-left: 74px;
+	width: 900px;
+	float: right;
+	height: 100%;
+}
+
+.right_content, .left_content{
+	display: inline-block;
+}
+.banner {
+	margin-left: 74px;
+	width: 900px;
+	float: right;
+		
+}
+
+
+.tariff__img-pic{
+	width: 27px;
+	height: 31px;
+	background-color:#4b73b5;
+	background-image: url(logo/Ellipse.png);
+	border-radius:50%;
+
+
+}
+
+.tariff__description{
+	text-align: center;
+}
+
+.tariff__price{
+	text-align: center;
+	font-weight: bold;
+}
+
+.content_inner-first, .content_inner-second{
+	display: inline-block;
+}
+.content_inner-second,.content_inner-third{
+	display: inline-block;
+}
+
+.content_inner-first{
+	text-align: center;
+}
+
+.content_inner-second{
+	margin-left: 84px;
+	text-align: center;
+}
+
+.content_inner-third{
+	text-align: center;
+	margin-left: 84px;
+}
+
+.tariff__subtitle{
+	text-align: center;
+}
+
+.content-item{
+	width: 695px;
+	height: 136px;
+	margin-top: 60px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+.news__img,.content-item{
+	display: inline-block;
+}
+
+.news__img-pic{
+	width: 160px;
+	height: 160px;
+}
+
+.paginations{
+	margin-top: 68px;
+	text-align: center;
+	
+}
+
+.paginations__text, .paginations__page{
+	display: inline-block;
+}
+
+.signature {
+	float: left;
+}
+
+.signature, .logo, .social {
+	display: inline-block;
+}
+
+.social__networks{
+	list-style-type: none;
+
+}
+
+footer {
+	height: 76px;
+	/*width: 1100px;*/
+	background: #4b73b5;
+}
