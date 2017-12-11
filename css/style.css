@@ -61,8 +61,9 @@ header {
 .right_content{
 	margin-top: 50px;
 	margin-left: 74px;
+	margin-right: 0px;
 	width: 900px;
-	float: right;
+	/*float: right;*/
 	height: 100%;
 }
 
@@ -165,4 +166,5 @@ footer {
 	height: 76px;
 	/*width: 1100px;*/
 	background: #4b73b5;
-}
+	/*float: inherit;
+}*/
