@@ -12,11 +12,13 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container clearfix">		
-				<div class="header__left">	
-					<a href="*" class="logo">
-					<img src="img/logo/logo.png" alt="Airplanet" class="logo__img"></a>
+				<div class="logotype">
+					<div class="header__logo">
+						<a href="index.html" class="logo">
+						<img src="img/logo/logo.png" alt="Airplanet" class="logo__img"></a>
+					</div>	
 				</div>
-				<div class="header__right">
+				<div class="communications">
 					<adress class="contacts">
 						<a href="tel:8000039210" class="contacts__phone">8 (800) 00-392-10</a>
 						<button class="contacts__schedule">График работы </button>
@@ -31,13 +33,13 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="#" class="nav__link nav__link_active">
+								<a href="index.html" class="nav__link nav__link_active">
 									<div class="nav__icon nav__icon_plane"></div>
 									<div class="nav__text nav__text-main">Главная</div>
 								</a>
 							</li>
 							<li class="nav__item">
-								<a href="#" class="nav__link">
+								<a href="reviews.html" class="nav__link">
 									<div class="nav__icon nav__icon_star"></div>
 									<div class="nav__text nav__text_reviw">Отзывы</div>
 								</a>
@@ -58,10 +60,10 @@
           			<nav class="breadcrumbs">
            				 <ul class="breadcrumbs__list">
              				 <li class="breadcrumbs__item">
-              				 	 <a href="#" class="breadcrumbs__item-link">Главная</a>
+              				 	 <a href="index.html" class="breadcrumbs__item-link">Главная</a>
              				 </li>
              				 <li class="breadcrumbs__item">
-              				 	 <a href="#" class="breadcrumbs__item-link breadcrumbs__item-link_active">Отзывы</a>
+              				 	 <div class="breadcrumbs__item-link breadcrumbs__item-link_active">Отзывы</div>
              				 </li>
            				 </ul>
           			</nav>
@@ -74,7 +76,7 @@
 							<div class="reviews__img">
 								<img class="reviews__img-pic" src="img/content/irina.png" alt="Ирина"></div>
 							<div class="reviews__item">
-								<p class="reviews__date">12.10.2016<p>
+								<div class="reviews__date">12.10.2016</div>
 								<h3 class="reviews__subtitle">Ирина Паламарчук</h3>
 								<p class="reviews__description">Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремнию<br>
 									Слав Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно<br>
@@ -86,7 +88,7 @@
 							<div class="reviews__img">
 								<img class="reviews__img-pic" src="img/content/alexander.png" alt="Александр"></div>
 							<div class="reviews__item">
-								<p class="reviews__date">01.02.2016<p>
+								<div class="reviews__date">01.02.2016</div>
 								<h3 class="reviews__subtitle">Александр Бельков</h3>
 								<p class="reviews__description">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2<br> 
 									раза, а еду - 1 раз. Единственное, что не понравилось, как-то мало места для ног<br>
@@ -98,7 +100,7 @@
 							<div class="reviews__img">
 								<img class="reviews__img-pic" src="img/content/igor.png" alt="Игорь"></div>
 							<div class="reviews__item">
-								<p class="reviews__date">22.12.2015<p>
+								<div class="reviews__date">22.12.2015</div>
 								<h3 class="reviews__subtitle">Игорь Николаенко</h3>
 								<p class="reviews__description">Кормили супер вообще! Сказали, что это из=за того,что полет менее 2,5 часов. Но<br>
 									прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень<br>
@@ -176,32 +178,29 @@
 					<div class="container">
 						<div class="form">
 							<div class="form__inner">
-								<h3 class="form__title">Оставить отзыв</h3>
-								<div class="form__element">
-									<label class="form__subtitle">Ваше имя</label>
-									<input type="text" name="" class="form__input">
+								<div class="form__title">Оставить отзыв</div>
+								<div class="form__data">
+									<div class="form__item">
+										<div class="form__subtitle">Ваше имя</div>
+										<input type="text" name="" placeholder="Андрей" class="form__input">
+									</div>
+									<div class="form__item">
+										<div class="form__subtitle">Ссылка на профиль VK</div>
+										<input type="text" name="" placeholder="vk.com/example" class="form__input">
+									</div>
 								</div>
-								<div class="form__element">
-									<label class="form__subtitle">Ссылка на профиль VK</label>
-									<input type="text" name="" class="form__input">
+								<div class="form__review">
+									<div class="form__subtitle">Текст отзыва</div>
+									<textarea name="" placeholder="Мне понравилось" class="form__text"></textarea>
 								</div>
-								<div class="form__element">
-									<label class="form__subtitle">Текст отзыва</label>
-									<textarea name="" class="form__text"></textarea>
-								</div>
-								<div class="form__element">
+								<div class="form__photo">
 									<div class="form__subtitle">Отображать фото в отзыве?</div>
-									<div class="form__radio">
-										<input type="radio" name="photo" class="form__radio-text">
-										<div class="form__radio-title">Да</div>
-									</div>
-									<div class="form__radio">
-										<input type="radio" name="photo" class="form__radio-text">
-										<div class="form__radio-title">Нет</div>
-									</div>
+									<input type="radio" name="photo"> Да
+									<input type="radio" name="photo"> Нет
 								</div>
-								<div class="form__element">
-									<button class="form__send">Отправить</button>
+								<div class="form__btn">
+									<button class="form__send">Отправить <span class="form__icon"></span></button>
+									
 								</div>
 							</div>			
 								
@@ -220,7 +219,7 @@
 				</div>
 			</div>
 		<div class="footer__col footer__col_mid">
-			<a href="*" class="logo__img">
+			<a href="index.html" class="logo__img">
 				<img src="img/logo/logo.png" alt="Airplanet" class="logo__img"></a>
 		</div>	
 		 <div class="footer__col footer__col_last">
