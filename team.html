@@ -21,7 +21,14 @@
 				<div class="communications">
 					<adress class="contacts">
 						<a href="tel:8000039210" class="contacts__phone">8 (800) 00-392-10</a>
-						<button class="contacts__schedule">График работы </button>
+						<div class="contacts__menu">
+							<button class="contacts__schedule">График работы</button>
+							<div class="dropdown">
+									<div class="triangle"></div>
+								<div class="dropdown__item_day">пн-вс: 09:00-20:00</div>
+		                    	<div class="dropdown__item_hour">обед: 14:00-14:30</div>
+							</div>	
+						</div>
 					</adress>
 				</div>
 			</div>
@@ -33,21 +40,21 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="index.html" class="nav__link nav__link_active">
+								<a href="index.html" class="nav__link">
 									<div class="nav__icon nav__icon_plane"></div>
-									<div class="nav__text nav__text-main">Главная</div>
+									<div class="nav__text">Главная</div>
 								</a>
 							</li>
 							<li class="nav__item">
 								<a href="reviews.html" class="nav__link">
 									<div class="nav__icon nav__icon_star"></div>
-									<div class="nav__text nav__text_reviw">Отзывы</div>
+									<div class="nav__text">Отзывы</div>
 								</a>
 							</li>
 							<li class="nav__item">
-								<a href="team.html" class="nav__link">
-									<div class="nav__icon nav__icon_hat"></div>
-									<div class="nav__text nav__text_team">Экипаж</div>
+								<a href="team.html" class="nav__link nav__link--active">
+									<div class="nav__icon nav__icon_hat nav__icon_hat--active"></div>
+									<div class="nav__text nav__text--active">Экипаж</div>
 								</a>
 							</li>
 			 			</ul>
@@ -74,7 +81,7 @@
 						<ul class="team__list">
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Alex.png" onmouseover="this.src='img/content/Alex-hover.png'" onmouseout="this.src='img/content/Alex.png'" alt="Белова А.В." class="team__photo">
+									<img src="img/content/Alex.png"  alt="Белова А.В." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -90,7 +97,7 @@
 							</li>
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Inna.png" onmouseover="this.src='img/content/Inna-hover.png'" onmouseout="this.src='img/content/Inna.png'"  alt="Сухарина И.Н." class="team__photo">
+									<img src="img/content/Inna.png" alt="Сухарина И.Н." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -108,7 +115,7 @@
 							</li>
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Boris.png" onmouseover="this.src='img/content/Boris-hover.png'" onmouseout="this.src='img/content/Boris.png'" alt="Лещ Б.А." class="team__photo">
+									<img src="img/content/Boris.png" alt="Лещ Б.А." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -125,7 +132,7 @@
 							</li>
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Elina.png" onmouseover="this.src='img/content/Elina-hover.png'" onmouseout="this.src='img/content/Elina.png'" alt="Дигангидзе Э.Д." class="team__photo">
+									<img src="img/content/Elina.png" alt="Дигангидзе Э.Д." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -143,7 +150,7 @@
 							</li>
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Elena.png" onmouseover="this.src='img/content/Elena-hover.png'" onmouseout="this.src='img/content/Elena.png'" alt="Следь Е.Н." class="team__photo">
+									<img src="img/content/Elena.png" alt="Следь Е.Н." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -162,7 +169,7 @@
 							</li>
 							<li class="team__item">
 								<div class="team__img">
-									<img src="img/content/Yrii.png" onmouseover="this.src='img/content/Yrii-hover.png'" onmouseout="this.src='img/content/Yrii.png'" alt="Нестеренко Ю.А." class="team__photo">
+									<img src="img/content/Yrii.png" alt="Нестеренко Ю.А." class="team__photo">
 									
 								</div>
 								<div class="team__content">
@@ -186,22 +193,22 @@
 						<div class="partners__title">Партнёры</div>
 						<ul class="partners__list">
 							<li class="partners__item">
-								<img src="img/logo/content/bmpcompany.png"  onmouseover="this.src='img/logo/content/bmpcompany-hover.png'" onmouseout="this.src='img/logo/content/bmpcompany.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/bmpcompany.png"  onmouseover="this.src='img/logo/content/bmpcompany-hover.png'" onmouseout="this.src='img/logo/content/bmpcompany.png'" alt="bmpcompany" class="partners__logo">
 							</li>
 							<li class="partners__item">
-								<img src="img/logo/content/tetra.png"  onmouseover="this.src='img/logo/content/tetra-hover.png'" onmouseout="this.src='img/logo/content/tetra.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/tetra.png"  onmouseover="this.src='img/logo/content/tetra-hover.png'" onmouseout="this.src='img/logo/content/tetra.png'" alt="tetra" class="partners__logo">
 							</li>
 							<li class="partners__item">
-								<img src="img/logo/content/syberair.png"  onmouseover="this.src='img/logo/content/syberair-hover.png'" onmouseout="this.src='img/logo/content/syberair.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/syberair.png"  onmouseover="this.src='img/logo/content/syberair-hover.png'" onmouseout="this.src='img/logo/content/syberair.png'" alt="syberair" class="partners__logo">
 							</li>
 							<li class="partners__item">
-								<img src="img/logo/content/oneair.png"  onmouseover="this.src='img/logo/content/oneair-hover.png'" onmouseout="this.src='img/logo/content/oneair.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/oneair.png"  onmouseover="this.src='img/logo/content/oneair-hover.png'" onmouseout="this.src='img/logo/content/oneair.png'" alt="oneair" class="partners__logo">
 							</li>
 							<li class="partners__item">
-								<img src="img/logo/content/bingair.png"  onmouseover="this.src='img/logo/content/bingair-hover.png'" onmouseout="this.src='img/logo/content/bingair.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/bingair.png"  onmouseover="this.src='img/logo/content/bingair-hover.png'" onmouseout="this.src='img/logo/content/bingair.png'" alt="bingair" class="partners__logo">
 							</li>
 							<li class="partners__item">
-								<img src="img/logo/content/ural.png"  onmouseover="this.src='img/logo/content/ural-hover.png'" onmouseout="this.src='img/logo/content/ural.png'" alt="логотип компании bmp" class="partners__logo">
+								<img src="img/logo/content/ural.png"  onmouseover="this.src='img/logo/content/ural-hover.png'" onmouseout="this.src='img/logo/content/ural.png'" alt="ural" class="partners__logo">
 							</li>
 						</ul>
 					</section>
