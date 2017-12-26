@@ -63,7 +63,7 @@ body {
 }
 
 .contacts__menu:hover .dropdown{
-	left: 26px;
+	left: 75px;
 	
 }
 
@@ -76,7 +76,7 @@ body {
     position: absolute;
     padding: 20px;
     top: 40px;
-    /*left: 26px;*/
+    /*left: 75px;*/
     transform: translateX(-50%);
     z-index: 10;
     border-radius: 2%;
