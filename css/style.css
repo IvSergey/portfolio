@@ -780,12 +780,14 @@ textarea{
 	margin: 0;
  	padding: 0;
 	list-style-type: none;
+	text-align: center;
 }
 
 .team__item{
 	display: inline-block;
 	margin-right: 30px;
 	vertical-align: top;
+
 
 }
 
@@ -796,17 +798,71 @@ textarea{
 }
 
 .team__img{
-  position: relative;
+  
   display: inline-block;
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  overflow: hidden;
-  margin-left: 50px;
   margin-bottom: 20px;
+  
+ }
+
+.team__img_Alex{
+	background-image: url('../img/content/Alex-hover.png');
+
+}
+
+.team__img_Inna{
+	background-image: url('../img/content/Inna-hover.png');
+
+}
+
+.team__img_Boris{
+	background-image: url('../img/content/Boris-hover.png');
+
+}
+
+.team__img_Elina{
+	background-image: url('../img/content/Elina-hover.png');
+
+}
+
+.team__img_Elena{
+	background-image: url('../img/content/Elena-hover.png');
+
+}
+
+.team__img_Yrii{
+	background-image: url('../img/content/Yrii-hover.png');
+
+}
+
+
+
+ .team__overlay{
+
+ 	background: rgba(75, 115, 181, 0.6);
+ 	width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;    
+ }
+
+ .team__overlay-text{
+ 	color: #ffffff;
+    position: absolute;
+    font-weight: bold;
+    font-size: 22px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
  }
 
 
+.team__overlay:hover{
+	opacity: 0;
+	cursor: pointer;
+}
 
 
 .team__content{
@@ -856,6 +912,7 @@ textarea{
 
 .partners__logo-color:hover{
 	opacity: 1;
+	cursor: pointer;
 }
 
 .partners__logo {
