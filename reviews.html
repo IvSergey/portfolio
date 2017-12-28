@@ -85,9 +85,7 @@
 							<div class="reviews__item">
 								<div class="reviews__date">12.10.2016</div>
 								<h3 class="reviews__subtitle">Ирина Паламарчук</h3>
-								<p class="reviews__description">Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремнию<br>
-									Слав Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно<br>
-									было.Рекомендую эту компанию, но лучше доплатить и лететь с комфортом
+								<p class="reviews__description">Классный полет, трясло первые полчаса так, что я боялась отстегнуть ремнию Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было.Рекомендую эту компанию, но лучше доплатить и лететь с комфортом.
 								</p>
 							</div>
 						</div>
@@ -97,9 +95,7 @@
 							<div class="reviews__item">
 								<div class="reviews__date">01.02.2016</div>
 								<h3 class="reviews__subtitle">Александр Бельков</h3>
-								<p class="reviews__description">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2<br> 
-									раза, а еду - 1 раз. Единственное, что не понравилось, как-то мало места для ног<br>
-									но с этим у меня часто проблема, рост 2,1 м.
+								<p class="reviews__description">Все понравилось, вежливые стюардессы, вовремя убирают, напитки предлагали 2	раза, а еду - 1 раз. Единственное, что не понравилось, как-то мало места для ног но с этим у меня часто проблема, рост 2,1 м.
 								</p>
 							</div>
 						</div>
@@ -109,10 +105,7 @@
 							<div class="reviews__item">
 								<div class="reviews__date">22.12.2015</div>
 								<h3 class="reviews__subtitle">Игорь Николаенко</h3>
-								<p class="reviews__description">Кормили супер вообще! Сказали, что это из=за того,что полет менее 2,5 часов. Но<br>
-									прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень<br>
-									проголодались.Просто имейте это ввиду, берите с собой хотя бы бутерброды,<br>
-									чипсы какие-то или печенье.
+								<p class="reviews__description">Кормили супер вообще! Сказали, что это из=за того,что полет менее 2,5 часов. Но	прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.
 								</p>
 							</div>
 						</div>
@@ -122,9 +115,7 @@
 							<div class="reviews__item">
 								<p class="reviews__date">14.08.2015<p>
 								<h3 class="reviews__subtitle">Анастасия Порядная</h3>
-								<p class="reviews__description">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за<br>
-									аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и<br>
-									всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!
+								<p class="reviews__description">За такую цену просто все отлично! Кто недоволен, платите в 2 раза больше за	аналогичные рейсы. Мне понравилось, что на борту было чисто, я аллергик и всегда чутко реагирую на пыль. Спасибо за полет! Рекомендую!
 								</p>
 							</div>
 						</div>
@@ -172,9 +163,8 @@
 
 				<div class="info">
 					<div class="container">
-						<p class="info__description"> Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br>
-							Для этого можно оставить <button class="line-text">заявку на сайте </button> или же позвонить по номеру<br>
-							технической поддержки <span class="bold-text">8(800) 00-392-10</span>.
+						<p class="info__description"> Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить <button class="line-text">заявку на 
+						сайте </button> или же позвонить по номеру технической поддержки <span class="bold-text"><a href="tel:8000039210" class="contacts__phone contacts__phone_small ">8 (800) 00-392-10</a></span>.
 						</p>
 					</div>
 				</div>
@@ -186,29 +176,39 @@
 						<div class="form">
 							<div class="form__inner">
 								<div class="form__title">Оставить отзыв</div>
-								<div class="form__data">
-									<div class="form__item">
-										<div class="form__subtitle">Ваше имя</div>
-										<input type="text" name="" placeholder="Андрей" class="form__input">
+								<form action="order php" method="post">
+									<div class="form__data">
+										<div class="form__item">
+											<label>
+												<div class="form__subtitle">Ваше имя</div>
+												<input type="text" name="" placeholder="Андрей" class="form__input">
+											</label>
+										</div>
+										<div class="form__item">
+											<label>
+												<div class="form__subtitle">Ссылка на профиль VK</div>
+												<input type="text" name="" placeholder="vk.com/example" class="form__input">
+											</label>
+										</div>
 									</div>
-									<div class="form__item">
-										<div class="form__subtitle">Ссылка на профиль VK</div>
-										<input type="text" name="" placeholder="vk.com/example" class="form__input">
+									<div class="form__review">
+										<label>
+											<div class="form__subtitle">Текст отзыва</div>
+											<textarea name="" placeholder="Мне понравилось" class="form__text"></textarea>
+										</label>
 									</div>
-								</div>
-								<div class="form__review">
-									<div class="form__subtitle">Текст отзыва</div>
-									<textarea name="" placeholder="Мне понравилось" class="form__text"></textarea>
-								</div>
-								<div class="form__photo">
-									<div class="form__subtitle">Отображать фото в отзыве?</div>
-									<input type="radio" name="photo"> Да
-									<input type="radio" name="photo"> Нет
-								</div>
-								<div class="form__btn">
-									<button class="form__send">Отправить <span class="form__icon"></span></button>
-									
-								</div>
+									<div class="form__photo">
+										<label>
+											<div class="form__subtitle">Отображать фото в отзыве?</div>
+											<input type="radio" name="photo"> Да
+											<input type="radio" name="photo"> Нет
+										</label>
+									</div>
+									<div class="form__btn">
+											<button class="form__send">Отправить <span class="form__icon"></span></button>
+										
+									</div>
+								</form>
 							</div>			
 								
 						</div>	

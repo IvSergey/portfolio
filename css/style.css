@@ -45,6 +45,11 @@ body {
 	display: block;
 }
 
+.contacts__phone_small{
+	font-size: 17px;
+	display: inline-block;
+}
+
 .contacts__schedule{
 	font-weight: bold;
 	font-size: 14px;
@@ -158,7 +163,7 @@ body {
 
 
 .nav{
-	padding: 50px 20px;
+	padding: 40px 20px;
 	float: left;
 	width: 115px;
 	height: 100%
@@ -251,6 +256,7 @@ body {
 	text-transform: uppercase;
 	color: #4b73b5;
 	letter-spacing: 2px;
+	margin-left: -8px;
 }
 
 .nav__text--active{
@@ -260,7 +266,7 @@ body {
 
 
 .nav__item{
-	margin-bottom: 10px;
+	margin-bottom: 26px;
 }
 
 
@@ -287,15 +293,17 @@ body {
 .tariff__inner{
 	text-align: center;
 	display: inline-block;
-	margin-right: 85px;
-	margin-top: 70px;
+	margin-right: 43px;
+    margin-top: 43px;
+    margin-left: 18px;
 }
 
 .tariff__title{
 	font-size: 49px;
 	font-weight: bold;
-	margin-top: 0px;
+	margin-top: 15px;
 	margin-bottom: 0px
+	margin-left: -8px;
 }
 
 
@@ -304,20 +312,27 @@ body {
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-top: 35px;
-	margin-bottom: 30px;
+	margin-top: 23px;
+	margin-bottom: 18px;
 	letter-spacing: 2px;
 }
 
 .tariff__description{
 	font-size: 18px;
 	color: #221f1f;
+	max-width: 205px;
 }
 
 .tariff__list{
 	text-align: left;
 	margin-top: 20px;
 	margin-bottom: 35px;
+	margin-left: -15px;
+}
+
+.tariff__item{
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
 
 .tariff__img{
@@ -343,9 +358,10 @@ body {
 }
 
 .tariff__price{
-	font-size: 40px;
+	font-size: 53px;
 	font-weight: bold;
-	margin-bottom: 110px;
+	margin-bottom: 49px;
+	margin-left: 10px;
 }
 
 .symbol{
@@ -355,73 +371,116 @@ body {
 
 
 
-.news__desc, .reviews__desc{
-	padding-bottom: 25px;
-	border-bottom: 2px #f5f5f5 solid;
-	margin-bottom: 30px;
+.news__desc{
+	border-bottom: 2px solid #f5f5f5;
+	padding-top: 28px;
+	padding-bottom: 31px;	
  }	
 
  .news__desc:last-child{
 	border-bottom: none;
 	margin-bottom: 0;
-	padding-bottom: 60px;
+	padding-bottom: 27px;
 }
 
-.reviews__desc:last-child{
-	border-bottom: none;
-	margin-bottom: 0;
-	padding-bottom: 60px;
-}
+
 
 .news__img, .news__item{
 	display: inline-block;
+
 }
 
-.reviews__img, .reviews__item{
+
+
+.reviews__img{
 	display: inline-block;
 }
 
-.news__title, .reviews__title{
+.news__title{
 	font-size: 49px;
 	font-weight: bold;
-	margin-bottom: 75px;
+	
 }
 
-.news__img, .reviews__img{
-	margin-right: 20px;
+.news__title{
+	padding-bottom: 16px;
 }
 
-.news__date, .reviews__date{
+.news__img{
+	/*margin-right: 12px*/;
+	margin-top: 22px;
+}
+
+.news__img{
+  width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin-right: 16px;
+	 margin-top: 7px;
+
+}
+
+
+
+
+
+.news__date{
 	font-size: 14px;
-	font-weight: 300;
-	color:#656464;
+	color: #989898;
+	font-weight: lighter;
+	padding-bottom: 10px;
 }
 
-.news__subtitle, .reviews__subtitle{
+
+
+.news__subtitle{
 	font-size: 18px;
 	font-weight: 700;
 	color:#221f1f;
+	margin-top: -8px;
 }
 
-.news__description, .reviews__description{
+.news__description{
 	font-size: 18px;
 	font-weight: 300;
 	color:#221f1f;
+	margin-top: -14px;
+	
+}
+
+.news__item{
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 1.67;
 }
 
 .news__desc{
-	margin-bottom: 60px;
+	/*list-style: none;*/
+	margin: 0;
+	padding-top: 24px;
+	padding-left: 0;
+	padding-bottom: 28px;
+	padding-right: 0;
 }
 
 
 
+.news__description{
+	max-width: 710px;
+}
 
+.news__description__travel{
+	max-width: 687px;
+}
 
 
 
 
 .pagination{
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .pagination__display, .pagination__controls{
@@ -441,7 +500,8 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	color: #656464;
-	margin-right: 20px;
+	margin-right: 11px;
+    margin-left: -29px;
 }
 
 .pagination__list, .breadcrumbs__list{
@@ -453,7 +513,7 @@ body {
 
 .pagination__page{
 	display: block;
-	padding: 10px 7px;
+	padding: 10px 0px;
 	width: 25px;
 	color: #221f1f;;
 	font-size: 14px;
@@ -493,10 +553,10 @@ body {
 .footer {
 	min-width: 1100px;
 	height: 76px;
-	margin-top: 65px;
+	margin-top: 40px;
 	background: #4b73b5;
 	width: 100%;
-	padding-top: 15px;
+	
 	
 }
 
@@ -604,7 +664,7 @@ body {
 
 
 .breadcrumbs {
-  margin-top: 32px;;
+  margin-top: 23px;;
 }
 
 .breadcrumbs__item {
@@ -636,12 +696,63 @@ body {
   text-decoration: none;
 }
 
+.reviews__title{
+	font-size: 49px;
+	font-weight: bold;
+	margin-top: 28px;
+	margin-bottom: 23px;
+}
+
+
+
+
+.reviews__desc{
+	border-bottom: 2px solid #f5f5f5;
+	padding-top: 35px;
+	padding-bottom: 3px;	
+}
+
+.reviews__desc:last-child{
+	border-bottom: none;
+	padding-bottom: 18px;
+	
+}
+
+
+.reviews__item{
+	display: inline-block;
+
+}
+
 .reviews__img{
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
+  margin-right: 14px;
+  
+}
+
+
+.reviews__date{
+	font-size: 14px;
+	color: #989898;
+	font-weight: lighter;
+	padding-bottom: 5px;
+}
+.reviews__subtitle{
+	font-size: 18px;
+	font-weight: 700;
+	color:#221f1f;
+	margin-top: -8px;
+}
+.reviews__description{
+	font-size: 18px;
+	font-weight: 300;
+	color:#221f1f;
+	
+	
 }
 
 .info{
@@ -652,7 +763,12 @@ body {
 .info__description{
   padding: 50px 250px;
   color:  #ffffff;
-  font-size: 17px
+  font-size: 17px;
+  max-width: 630px;
+}
+
+.reviews__description{
+	max-width: 700px;
 }
 
 .line-text{
@@ -887,6 +1003,7 @@ textarea{
 .team__desc{
 	font-size: 14px;
 	font-weight: 300;
+	max-width: 261px;
 }
 
 
@@ -906,13 +1023,12 @@ textarea{
 
 }
 
-.partners__logo-color {
-    opacity: 0;
+.partners__logo {
+   filter: grayscale(100%);
 }
 
-.partners__logo-color:hover{
-	opacity: 1;
-	cursor: pointer;
+.partners__logo:hover{
+	filter: grayscale(0%);
 }
 
 .partners__logo {
