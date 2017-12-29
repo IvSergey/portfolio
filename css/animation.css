@@ -1,0 +1,80 @@
+.intro__item {
+    animation-name: bounce;
+    animation-duration: 2s;
+    transform-origin: -50% -50% 0;
+    -webkit-transform-origin: -50% -50% 0;
+  }
+    
+
+ @keyframes bounce {
+
+  0%  { 
+    top:000px; -webkit-animation-timing-function:ease-in; 
+  }
+
+  37% {
+   top:500px; -webkit-animation-timing-function:ease-out;
+  }
+
+  55% {
+   top:375px; -webkit-animation-timing-function:ease-in; 
+  }
+ 
+  73%{
+    top:500px; -webkit-animation-timing-function:ease-out;
+  }
+       
+   82%{ 
+    top:465px; -webkit-animation-timing-function:ease-in;
+  }
+
+   91%{    
+    top:500px; -webkit-animation-timing-function:ease-out; 
+  }
+
+   96%{
+    top:490px; -webkit-animation-timing-function:ease-in;
+  }
+      
+    100% { 
+      top:500px;
+   }
+}
+
+
+
+
+  @-webkit-keyframes bounce {
+
+  0%  { 
+    top:000px; -webkit-animation-timing-function:ease-in; 
+  }
+
+  37% {
+   top:500px; -webkit-animation-timing-function:ease-out;
+  }
+
+  55% {
+   top:375px; -webkit-animation-timing-function:ease-in; 
+  }
+ 
+  73%{
+    top:500px; -webkit-animation-timing-function:ease-out;
+  }
+       
+   82%{ 
+    top:465px; -webkit-animation-timing-function:ease-in;
+  }
+
+   91%{    
+    top:500px; -webkit-animation-timing-function:ease-out; 
+  }
+
+   96%{
+    top:490px; -webkit-animation-timing-function:ease-in;
+  }
+      
+    100% { 
+      top:500px;
+   }
+}
