@@ -24,17 +24,35 @@ body{
 }
 
 
+header{
+	margin-left: 255px;
+}
+
 .my-flex-container{
 	width: 100%;
 	
-    background: url('../img/background/video-bg.png');
+    background: url('../img/background/video-bg.png')  center center;
 }
 
 .flex-container{
 	max-width: 1100px;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+}
+
+.flex-item{
+	padding: 10px;
+}
+
+.logo__img{
+    width: 90px;
+	height: 70px;
+}
+
+.nav{
+	margin-left: 50px;
 }
 
 .nav__item{
@@ -47,9 +65,9 @@ body{
 	
 }
 
-.flex-item{
+/*.flex-item{
 	margin-right: 0;
-}
+}*/
 
 .nav__link{
 	text-decoration: none;
@@ -58,11 +76,49 @@ body{
 }
 
 
-.nav__text{
-	margin-right: 10px;
-}
-.nav__text::before{
+
+.nav__text:after{
 	color:#ffffff;
-	content: "\2022"
+	content: "\2022";
+	margin-right: 12px;
+    margin-left: 15px;
+}
+
+.form__btn{
+	
+	
+	width: 97px;
+	height: 35px;
+}
+
+.form__send{
+	border-radius: 5px;
+	font-family: Ubuntu;
+	background-color:  #e45028;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 30px;
+	text-align: right;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.desc__title{
+	font-family: Gagalin;
+	color:  #f9b43b;
+	font-size: 72px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.desc__text{
+	max-width: 50px;
+	font-family: Lifehack;
+	color:  #ffffff;
+	font-size: 65px;
+	font-weight: 500;
+	text-align: left;
+	transform: scaleX(1.0006);
 
 }
