@@ -2,281 +2,105 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1100", initial-scale=1.0>
-	<title>Airplanet</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<title>Mr.Burger</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<div class="container clearfix">		
-				<div class="logotype">
-					<div class="header__logo">
-						<a href="intro.html" class="logo">
-						<img src="img/logo/logo.png" alt="Airplanet" class="logo__img"></a>
-					</div>	
-				</div>
-				<div class="communications">
-					<adress class="contacts">
-						<a href="tel:8000039210" class="contacts__phone">8 (800) 00-392-10</a>
-						<div class="contacts__menu">
-							<button class="contacts__schedule">График работы</button>
-							<div class="dropdown">
-									<div class="triangle"></div>
-								<div class="dropdown__item_day">пн-вс: 09:00-20:00</div>
-		                    	<div class="dropdown__item_hour">обед: 14:00-14:30</div>
+		<div class="my-flex-container">
+			<header class="header">
+				<div class="flex-container">
+					<div class="flex-item">
+						<div class="logotype">
+							<div class="header__logo">
+								<a href="#" class="logo">
+								<img src="img/icons/logo.svg" alt="Mr.Burger" class="logo__img"></a>
 							</div>	
 						</div>
-					</adress>
-				</div>
-			</div>
-		</header>		
-				
-		<div class="maincontent">
-			<div class="container clearfix">
-				<aside class="sidebar">
-					<nav class="nav">
-						<ul class="nav__list">
-							<li class="nav__item">
-								<a href="index.html" class="nav__link nav__link--active">
-									<div class="nav__icon nav__icon_plane nav__icon_plane--active"></div>
-									<div class="nav__text nav__text--active">Главная</div>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a href="reviews.html" class="nav__link">
-									<div class="nav__icon nav__icon_star"></div>
-									<div class="nav__text">Отзывы</div>
-								</a>
-							</li>
-							<li class="nav__item">
-								<a href="team.html
-								" class="nav__link">
-									<div class="nav__icon nav__icon_hat"></div>
-									<div class="nav__text">Экипаж</div>
-								</a>
-							</li>
-			 			</ul>
-					</nav>	
-				</aside>
-				<main class="content">
-
-					<!-- Секция с описанием -->
-
-					<section class="desc">
-						<div class="banner">
-								<img src="img/decor/Plane.png" alt="banner"></div>		
-						<div class="tariff">	
-							<h2 class="tariff__title">Тарифы</h2>
-							<div class="tariff__inner">
-								<div class="tariff__img">
-									<div class="tariff__img tariff__img_flower"></div>
-								</div>
-								<h5 class="tariff__subtitle">Стандарт</h5>	
-								<div class="tariff__description">
-									<p>Создан для вашего комфортного отдыха</p>
-									<ul class="tariff__list">
-										<li class="tariff__item">Питание включено</li>
-										<li class="tariff__item">Багаж (5 кг)</li>
-										<li class="tariff__item">Детское кресло</li>
-									</ul>
-								</div>	
-								<div class="tariff__price"><span class="symbol">$</span>19</div>	
-							</div>	
-
-							<div class="tariff__inner">
-								<div class="tariff__img">
-									<div class="tariff__img tariff__img_star"></div>
-								</div>
-								<h5 class="tariff__subtitle">Премиум</h5>				
-								<div class="tariff__description">	
-									<p>Для любителей хороших впечатлений</p>
-									<ul class="tariff__list">
-										<li class="tariff__item">Питание включено</li>
-										<li class="tariff__item">Багаж (5 кг)</li>
-										<li class="tariff__item">Детское кресло</li>
-									</ul>	
-								</div>
-								<div class="tariff__price"><span class="symbol">$</span>39</div>		
-							</div>	
-
-							<div class="tariff__inner">
-								<div class="tariff__img">
-									<div class="tariff__img tariff__img_pallete"></div>
-								</div>
-								<h5 class="tariff__subtitle">Лакшери</h5>	
-								<div class="tariff__description">
-									<p>Все самое лучшее и незабываемое</p>		
-									<ul class="tariff__list">
-										<li class="tariff__item">Питание включено</li>
-										<li class="tariff__item">Багаж (5 кг)</li>
-										<li class="tariff__item">Детское кресло</li>
-									</ul>
-								</div>		
-								<div class="tariff__price"><span class="symbol">$</span>99</div>	
-							</div>							
-						</div>	
-					</section>
-
-						<!-- Секция новостей -->
-
-					<section class="news">
-						<h2 class="news__title">Последние новости</h2>
-						<div class="news__desc">	
-							<div class="news__img">
-								<img class="news__img-pic" src="img/content/planeflying.png" alt="Самолет"></div>
-							<div class="news__item">
-								<div class="news__date">12.10.2016</div>
-								<h3 class="news__subtitle">Ночные перелеты дешевле!</h3>
-								<p class="news__description">Ужасный полет, трясло первые полчаса так, что я боялась отстегнуть ремни. Слава Богу, ничего не случилось, но мне даже валерьянка не помогла, так страшно было. Не рекомендую эту компанию, лучше доплатить и лететь с комфортом.</p>
-							</div>
-						</div>	
-						<div class="news__desc">
-							<div class="news__img">
-								<img class="news__img-pic" src="img/content/mountain.png" alt="Грузия"></div>
-							<div class="news__item">
-								<div class="news__date">01.02.2016</div>
-								<h3 class="news__subtitle">Путешествие в Грузию стало доступнее</h3>
-								<p class="news__description news__description__travel">Все понравилось, вежливые стюардессы, вовремя убирают, напитки	предлагали 2 раза, а еду – 1 раз. Единственное, что не понравилось, как то мало места для ног, но с этим у меня часто проблема, рост 2,1м.</p> 
-							</div>
-						</div>
-						<div class="news__desc">
-							<div class="news__img">
-								<img class="news__img-pic" src="img/content/tourist.png" alt="детские авиабилеты"></div>
-							<div class="news__item">	
-								<div class="news__date">22.12.2015</div>
-								<h3 class="news__subtitle">Детские авиабилеты доступны для бизнес-класса</h3>
-								<p class="news__description">Не кормили вообще! Сказали, что это из-за того, что полет менее 2,5 часов.Но прибавьте к этому время регистрации в аэропорту. Летел с женой и мы очень проголодались.Просто имейте это ввиду, берите с собой хотя бы бутерброды, чипсы какие-то или печенье.</p>		
-							</div>
-						</div>				
-					</section>	
-
-						<!-- Переключение страниц -->
-
-					<section class="pagination">
-						<div class="pagination__display">Страница 1 из 7</div>
-						<div class="pagination__controls">
-							<ul class="pagination__list">
-								<li class="pagination__item">
-									<a href="#" class="pagination__btn pagination__btn_left"><</a>
+					</div>
+					<div class="flex-item">
+						<nav class="nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">о нас</div>
+									</a>
 								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page pagination__page_active">1</a>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">бургеры</div>
+									</a>
 								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">2</a>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">команда</div>
+									</a>
 								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">3</a>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">меню</div>
+									</a>
 								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">4</a>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">отзывы</div>
+									</a>
 								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">5</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">6</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__page">7</a>
-								</li>
-								<li class="pagination__item">
-									<a href="#" class="pagination__btn"> > </a>
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<div class="nav__text">контакты</div>
+									</a>
 								</li>
 							</ul>
-						</div>	
-					</section>		
-				 </main>
-			</div>				
-		</div>					
+						</nav>
+					</div>
+					<div class="flex-item">
+						<div class="form">
+							<form action="order php" method="post">
+							<div class="form__btn">
+								<button class="form__send">Заказать</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</header>
+		</div>
+
 	</div>
 
-	<footer class="footer">
-		<div class="container clearfix">
-			 <div class="footer__col">
-				<div class="footer__signature">
-					Разработано с любовью и старанием<br>
-					на курсе «HTML + CSS» в <a href="https://loftschool.com/">Loftschool</a> <br>
-					Автор работы:  <span class="bold-text">Прохладов Вадим</span>
-				</div>
-			</div>
-			<div class="footer__col footer__col_mid">
-				<div class="footer__logo">
-					<a href="intro.html" class="logo">
-					<img src="img/logo/logo.png" alt="Airplanet" class="logo"></a>
-				</div>
-			</div>	
-			 <div class="footer__col footer__col_last">
-				<div class="social">
-					<div class="social__title">Наши социальные сети</div>
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="" class="social__link social__link_vk"></a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link_fb"></a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link_gp"></a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link_tw"></a>
-						</li>
-						<li class="social__item">
-							<a href="" class="social__link social__link_mail"></a>
-						</li>
-					</ul>
-				</div>	
-			</div>
-		</div>		
-	</footer>				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-</html>							
-								
-								
-							
-							
-					
-						
-							
-						
-						
-						
-					
-
-					
-				
-				
-		
-		
-		
-	
-	
-
-
-
-
-
-
-
-
-				
-					
-			
-
-				
-
-
-
-
-
-
-			
-		
-				
-			
-			
-			
+</html>
