@@ -44,7 +44,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
+
 
 	
 }
@@ -58,7 +58,7 @@ header{
 .logotype{
 	align-items: center;
 	width: 278px;
-    padding-left: 79px;
+    padding-left: 87px;
     padding-top: 11px
 }
 
@@ -130,9 +130,9 @@ header{
 
 .banner{
 	 
-	padding-left: 129px;
+	padding-left: 107px;
     padding-right: 14px;
-    margin-top: -11px;
+    margin-top: 53px;
    /* background-image: url('../img/content/drops.png')  ;*/
 }
 
@@ -206,6 +206,7 @@ header{
 
 .scroll{
 	padding-top: 87px;
+	padding-left: 9px;
     
     
 }
