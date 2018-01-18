@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'lifehack';
-    src: url('../fonts/Lifehack_medium-webfont.woff2') format('woff2'),
-         url('../fonts/Lifehack_medium-webfont.woff') format('woff');
+    src: url('../fonts/Lifehack/lifehack_medium-webfont.woff2') format('woff2'),
+         url('../fonts/Lifehack/lifehack_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
