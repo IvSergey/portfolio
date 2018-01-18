@@ -24,7 +24,10 @@ body{
 }
 
 
-
+/*.wraper{
+	height: 100%;
+    min-width: 1100px;
+}*/
 .start-section{
 	background: url('../img/background/video-bg.png')  center center no-repeat;
 	background-size: cover;
@@ -37,10 +40,11 @@ body{
 
 .flex-container{
 	min-height: 650px;
-	max-width: 1100px;
+	/*max-width: 1100px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 
 	
 }
@@ -136,6 +140,7 @@ header{
 
 .desc{
 	padding-top: 157px;
+	width: 441px;
 }
 
 
