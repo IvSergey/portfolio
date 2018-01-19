@@ -44,6 +44,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: auto;
 
 
 	
@@ -210,3 +211,87 @@ header{
     
     
 }
+
+.best-section{
+	background: url('../img/background/bg.png')  center center no-repeat;
+	background-size: cover;
+    display: flex;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.title__text{
+	font-family: gagalin;
+	font-size: 72px;
+	color: #2f3234;
+	text-transform: uppercase;
+	padding-top: 148px;
+	padding-left: 8px;
+}
+
+.advantages{
+	display: flex;
+	padding-top: 27px;
+    /*text-align: center;
+    padding-left: 55px;*/
+}
+
+.advantages__inner{
+	width: 288px;
+    margin: 15px;
+}
+
+
+.advantages__img{
+	/*width: 90px;*/
+	height: 80px;
+	background-position: center center;
+  	background-repeat: no-repeat;
+  	padding-bottom: 68px
+  	/*padding-left: 87px;*/
+}
+
+.advantages__img_meat{
+	/*width: 97px;
+	height: 89px;*/
+	background-image: url('../img/icons/meat.svg');
+}
+
+.advantages__img_hand{
+	/*width: 73px;
+	height: 85px;*/
+	background-image: url('../img/icons/hand.svg');
+}
+
+.advantages__img_salad{
+	/*width: 88px;
+	height: 75px;*/
+	background-image: url('../img/icons/salad.svg');
+}
+
+.advantages__subtitle{
+	font-family: Lifehack;
+	color:  #2f3234;
+	font-size: 23px;
+	font-weight: 500;
+	line-height: 28px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.advantages__desc{
+	font-family: Ubuntu;
+	color:  #2f3234;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+}
+
