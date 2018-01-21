@@ -1,0 +1,75 @@
+.natural{
+	background: url('../img/background/video-bg.png')  center center no-repeat;
+	background-size: cover;
+    display: flex;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.natural__container{
+	height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+	
+
+	
+}
+
+
+
+.natural__content{
+	display: flex;
+    width: 100%;
+        padding-top: 84px;
+
+}
+
+.banner{
+	padding-left: 17px;
+    margin-top: 57px;
+    width: 480px;
+    margin-right: 1px;
+}
+
+
+
+.desc{
+	padding-top: 120px;
+    width: 441px
+}
+
+
+.desc__title{
+    font-family: gagalin;
+    color: #f9b43b;
+    font-size: 72px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 11px
+}
+
+.desc__text{
+	
+    font-family: lifehack;
+    color: #ffffff;
+    font-size: 65px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 0.94;
+    letter-spacing: -2px;
+    line-height: 0.9;
+
+}
+
+
+
+.scroll{
+	padding-top: 87px;
+	
+    
+    
+}

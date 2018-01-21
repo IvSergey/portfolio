@@ -1,0 +1,127 @@
+.reviews {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.reviews__container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-content:center;
+  flex-wrap:wrap;
+
+}
+
+.reviews__img:hover {
+  filter: grayscale(0.5); 
+}
+
+.reviews__img:hover .reviews__item {
+  opacity: 1; 
+}
+
+.reviews__img {
+   min-height: 32.5rem;
+  height: 50vh;
+  width: 25%;
+  filter: grayscale(1);
+  background-size: cover;
+   
+}
+
+
+.reviews__img_Olga{
+  background-image: url('../img/content/Olga.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Alex{
+  background-image: url('../img/content/Alex.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Elena{
+  background-image: url('../img/content/Elena.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Den{
+  background-image: url('../img/content/Den.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Vlad{
+  background-image: url('../img/content/Vlad.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Irina{
+  background-image: url('../img/content/Irina.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Ivan{
+  background-image: url('../img/content/Ivan.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__img_Nik{
+  background-image: url('../img/content/Nik.png');
+   background-repeat: no-repeat;
+  
+}
+
+.reviews__item {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 90%;
+  width: 70%;
+  text-align: left;
+  margin: auto; 
+}
+
+.reviews__title {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: gagalin;
+  // margin-top: 5vh;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 24px; 
+}
+
+.btn__more{
+  width: 110px;
+  border-radius: 5px;
+  padding-top: 2px;
+  margin-top: 20px;
+  border:none;
+  font-family: Ubuntu;
+  background-color:  #2f3234;
+  color:  #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
