@@ -19,13 +19,14 @@
 }
 
 .title{
-	padding-top: 110px;
-    padding-bottom: 27px;
+	padding-top: 88px;
+    padding-bottom: 5px;
 }
 
 .title__text{
 	font-family: gagalin;
 	font-size: 72px;
+	font-weight: 400;
 	color: #2f3234;
 	text-transform: uppercase;
 	
@@ -82,8 +83,8 @@
 	font-weight: 500;
 	line-height: 28px;
 	text-align: center;
-	padding-bottom: 15px;
-    padding-top: 28px;
+	
+    padding-top: 9px;
 }
 
 .advantages__desc{
@@ -93,4 +94,6 @@
 	font-weight: 300;
 	line-height: 24px;
 	text-align: center;
+	margin-top: -5px;
 }
+
