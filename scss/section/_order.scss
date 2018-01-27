@@ -1,0 +1,58 @@
+.order {
+  background: url('../img/background/bg-texture.png') center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form{
+  color: #fff;
+}
+
+.form__row{
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.form__block{
+  display: block;
+  flex:1;
+  margin-right: 20px;
+  
+}
+
+// .form__block:last-child{
+//     margin-right: 0;
+//   }
+
+.form__input{
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.order__title{
+   font-family: gagalin;
+    color: #f9b43b;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.form__content_location{
+  width: 50%;
+}
+
+.form__content_comments{
+  width: 50%;
+}
+
+.form__elem{
+  display: flex;
+}
+
+.form__input_comment{
+  height: 128px;
+}
+
+.form__check{
+  display: flex;
+}

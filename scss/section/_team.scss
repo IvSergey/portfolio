@@ -2,39 +2,70 @@
   background: url('../img/background/bg-photo.png');
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  
+  position: relative;
+  height: 100vh;
+
 }
 
 .team__container {
-  height: 100vh;
-  margin: auto;
-  width: 100%;
+  
   display: flex;
-  flex-direction:row;
-  justify-content:flex-end;
-  align-content:center;
-  flex-wrap:wrap;
+  align-items: center;
+  justify-content:center;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(47, 50, 52, 0.8);
+
 
 }
 .team__content{
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-    width: 50%;
-    flex-direction: column;
+  // display: flex;
+  // justify-content: flex-end;
+  // flex-direction: column;
+  // justify-content:flex-start;
+  // margin-right: 90px;
+  //   margin-top: 40px;
+  width: 70%;
+    
+
 }
 
-.team__accordeon{
-  
+a{
+  text-decoration: none;
 }
 
 .team__title{
   font-family: gagalin;
   color: #f9b43b;
   font-size: 72px; 
+  font-weight: 400;
+  margin-bottom: 23px;
+  
+}
+
+.team__desc{
+  padding-top: 6px;
+}
+
+.team__subtitle{
+  font-family: Ubuntu;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.team__text{
+  font-family: Ubuntu;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 209px
 }
 
 .team__name{
@@ -45,4 +76,62 @@
   line-height: 28px;
   text-align: left;
   text-transform: uppercase;
+  // padding-bottom: 21px;
+  display: flex;
+  }
+   .team__name:before{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      border-bottom-width: 0;
+      border-top-color: #f9b43b; 
+      margin-right: 9px;
+      margin-top: 12px;
+
+    }
+
+.team__accordeon-inner{
+  margin-bottom: 25px;
 }
+
+.team__accordeon-inner--active{
+  .team__name{
+    color: #f9b43b;
+  }
+  
+  .team__name:before{
+    transform:rotate(180deg);
+  }
+
+  .team__accordeon-description{
+    height: auto;
+    display: flex;
+
+  }
+  
+}
+
+.team__accordeon-description{
+  height: 0;
+  overflow: hidden;
+}
+
+.team__photo{
+  padding-left: 17px;
+  margin-right: 21px;
+
+}
+
+.team__photo-avatar{
+  padding-top: 13px
+}
+
+
+
+.team__accordeon-description{
+  display: flex;
+}
+
+
