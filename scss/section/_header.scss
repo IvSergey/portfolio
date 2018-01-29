@@ -37,7 +37,7 @@
 }
 
 .header__menu{
-  padding-top: 20px;
+  padding-top: 12px;
 }
 
 
@@ -54,18 +54,26 @@
   display: inline-block;
   vertical-align: middle;
   white-space: nowrap;
-  &:after {
+  &:before {
     display: inline-block;
     vertical-align: middle;
     content: ' ';
     @include circle(5px, #fff);
     margin: 0 12px;
   }
-  &:last-child:after {
+  
+  &:first-child:before {
     display: none;
   }
 }
 
+.nav__item:last-child:before{
+
+  display: none;
+   
+   
+  
+}
 
 
 
@@ -92,6 +100,7 @@
 
 
 .order-link{
+  margin: 0 6px;
 	width: 97px;
 	border-radius: 5px;
 	padding-top: 2px;

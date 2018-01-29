@@ -44,9 +44,9 @@
 			<div class="container header__container">
 				<div class="header__content">
 						<div class="header__logo">
-							<a href="#" class="logo">
+							
 								<img src="img/icons/logo.svg" alt="Mr.Burger" class="logo__img">
-							</a>
+							
 						</div>	
 						<div class="header__menu">
 							<nav class="nav">
@@ -78,15 +78,22 @@
 									</li>
 									<li class="nav__item">
 										<a href="#" class="nav__link">
-											<div class="nav__text-last">контакты</div>
+											<div class="nav__text">контакты</div>
 										</a>
 									</li>
+									<li class="nav__item">
+										<a href="#" class="nav__link">
+											<div class="order-link">Заказать</div>
+										</a>
+									</li>
+
+
 								</ul>
 							</nav>	
-						</div>
-						<div class="header__btn">
+						<<!-- /div>
+						<div class="">
 							<button class="order-link">Заказать</button>
-						</div>
+						</div> -->
 				</div>
 			</div>		
 		</header>
@@ -127,9 +134,9 @@
 			</section>
 			<section class="section best">
 				<div class="container best__container">
-					<h1 class="title">
+					<h2 class="title">
 						<div class="title__text">мы лучшие</div>
-					</h1>
+					</h2>
 					<ul class="advantages">
 						<li class="advantages__inner">
 							<div class="advantages__img">
@@ -401,22 +408,22 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__block-title">Комментарий</div>
-                                    <input type="text" class="form__input form__input_comment">
+                                    <textarea name="comment" class="form__input form__input_comment"></textarea>
                                 </label>
                             </div>
                             <div class="form__row form__row_center">
                                 <label class="form__check">
-                                    <input type="radio" class="form__radio">
-                                    <div class="form__block-title">Потребуется сдача</div>
+                                    <input type="radio" name="pay" class="form__radio" value="cash">
+                                    <div class="form__block-title" >Потребуется сдача</div>
                                 </label>
                                 <label class="form__check">
-                                    <input type="radio" class="form__radio">
+                                    <input type="radio" name="pay" class="form__radio" value="card">
                                     <div class="form__block-title">Оплата по карте</div>
                                 </label>
                             </div>
                             <div class="form__row form__row_center">
                                 <label class="form__check">
-                                    <input type="radio" class="form__radio">
+                                    <input type="checkbox" class="form__radio">
                                     <div class="form__block-title">Не перезванивать</div>
                                 </label>
                             </div>

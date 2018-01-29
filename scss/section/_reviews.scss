@@ -3,9 +3,11 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .reviews__container {
+  min-height: 650px;
   margin: auto;
   width: 100%;
   display: flex;
@@ -21,9 +23,6 @@
   position: relative;
   width: 25%;
   justify-content: center;
-}
-.reviews__inner:hover .reviews__img  {
-  filter: grayscale(0.5); 
 }
 
 .reviews__inner:hover .reviews__item {

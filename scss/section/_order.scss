@@ -1,7 +1,17 @@
 .order {
   background: url('../img/background/bg-texture.png') center center no-repeat;
   background-size: cover;
+  min-height: 100vh;
+}
+
+.order__container{
   height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  
+      padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .form{
@@ -9,7 +19,7 @@
 }
 
 .form__row{
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: flex;
 }
 
@@ -25,7 +35,7 @@
 //   }
 
 .form__input{
-  padding: 10px;
+  padding: 6px;
   border-radius: 5px;
   width: 100%;
 }
@@ -35,6 +45,7 @@
     color: #f9b43b;
     font-size: 72px;
     font-weight: 400;
+    margin-bottom: 23px;
 }
 
 .form__content_location{
@@ -50,9 +61,54 @@
 }
 
 .form__input_comment{
-  height: 128px;
+  height: 6.78rem;
 }
 
 .form__check{
   display: flex;
+  margin-right: 25px;
+}
+
+.form__radio{
+  margin-top: 3px;
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.form__block-title{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.order__btn{
+  margin: 0 6px;
+  width: 97px;
+  border-radius: 5px;
+  padding-top: 2px;
+    margin-top: 6px;
+  border:none;
+  
+  background-color:  #e45028;
+  color:  #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.order__btn-clear{
+    background: none;
+    
+    font-size: 0.875rem;
+     margin-left: 7px; 
+    padding-top: 2px;
+    margin-top: 6px;
+    border:none;
+    font-family: Ubuntu;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
 }
