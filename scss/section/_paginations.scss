@@ -16,9 +16,9 @@
 
 .paginations__list{
 	
-	margin-top: 8px;
-    margin-right: 53px;
-    line-height: 19px;
+	margin-top: rem(8px);
+    margin-right: rem(53px);
+    line-height: rem(19px);
 }
 
 .paginations__item{
@@ -26,9 +26,9 @@
 	list-style: none;
 	 color: #fff;
     position: relative;
-    margin-bottom: 15px;
-    width: 6px;
-    height: 6px;
+    margin-bottom: rem(15px);
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background-color: #fff;
 }
@@ -36,28 +36,28 @@
 .paginations__link{
 	text-decoration: none;
 	color:#ffffff;
-	font-size: 25px;
+	font-size: rem(25px);
 	
 }
 
 .paginations__item:hover .paginations__link{
      content: "";
-    width: 12px;
-    height: 12px;
-    border: 1px solid #fff;
+    width: rem(12px);
+    height: rem(12px);
+    border: rem(1px) solid #fff;
     border-radius: 50%;
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: rem(-3px);
+    left: rem(-3px);
 }
 
 .paginations__link--active{
     content: "";
-    width: 12px;
-    height: 12px;
-    border: 1px solid #fff;
+    width: rem(12px);
+    height: rem(12px);
+    border: rem(1px) solid #fff;
     border-radius: 50%;
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: rem(-3px);
+    left: rem(-3px);
 }

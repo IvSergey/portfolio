@@ -2,15 +2,15 @@
   background: url('../img/background/bg-footer.png'); 
   background-size: cover;
   position: absolute;
-  bottom: 0;
+ 
   display: flex;
   flex-direction: row;
   width: 100vw;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 }
 
 .footer__container{
-  min-height: 60px;
+  min-height: rem(60px);
   flex-direction:row;
 }
 
@@ -21,13 +21,13 @@
 
 .footer__address{
   
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
   color: #ffffff;	
 }
 
 .footer__tel{
- font-size: 14px;
+ font-size: rem(14px);
  font-weight: 700;
  color: #e35028
 }
@@ -42,4 +42,22 @@
 
 .footer__item{
 	margin-right: 1.25rem;
+}
+
+.social__icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: rem(10px);
+  fill:#6b6969;
+  width: rem(20px);
+  height: rem(20px);
+  &:hover{
+    fill:#ffffff;
+
+  }
+
+  &:first-child{
+    margin-left: 0;
+  }
+
 }

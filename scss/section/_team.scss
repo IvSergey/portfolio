@@ -41,39 +41,39 @@ a{
 .team__title{
   font-family: gagalin;
   color: #f9b43b;
-  font-size: 72px; 
+  font-size: rem(72px); 
   font-weight: 400;
-  margin-bottom: 23px;
+  margin-bottom: rem(23px);
   
 }
 
 .team__desc{
-  padding-top: 6px;
+  padding-top: rem(6px);
 }
 
 .team__subtitle{
-  font-family: Ubuntu;
+  // font-family: Ubuntu;
   color:  #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
-  line-height: 24px;
+  line-height: rem(24px);
 }
 
 .team__text{
   font-family: Ubuntu;
   color:  #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 300;
-  line-height: 24px;
-  width: 209px
+  line-height: rem(24px);
+  width: rem(209px);
 }
 
 .team__name{
   font-family: gagalin;
   color:  #ffffff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
-  line-height: 28px;
+  line-height: rem(28px);
   text-align: left;
   text-transform: uppercase;
   // padding-bottom: 21px;
@@ -84,16 +84,16 @@ a{
       display: block;
       width: 0;
       height: 0;
-      border: 5px solid transparent;
+      border: rem(5px) solid transparent;
       border-bottom-width: 0;
       border-top-color: #f9b43b; 
-      margin-right: 9px;
-      margin-top: 12px;
+      margin-right: rem(9px);
+      margin-top: rem(12px);
 
     }
 
 .team__accordeon-inner{
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 
 .team__accordeon-inner--active{
@@ -119,13 +119,13 @@ a{
 }
 
 .team__photo{
-  padding-left: 17px;
-  margin-right: 21px;
+  padding-left: rem(17px);
+  margin-right: rem(21px);
 
 }
 
 .team__photo-avatar{
-  padding-top: 13px
+  padding-top: rem(13px);
 }
 
 

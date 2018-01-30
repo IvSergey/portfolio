@@ -59,31 +59,31 @@
 }
 
 .reviews__title {
-  font-size: 14px;
+  font-size: rem(14px);
   color: #ffffff;
   font-family: gagalin;
   // margin-top: 5vh;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .reviews__text {
-  font-size: 14px;
+  font-size: rem(14px);
   color: #ffffff;
-  line-height: 24px; 
+  line-height: rem(24px); 
 }
 
 .btn__more{
-  width: 110px;
-  border-radius: 5px;
-  padding-top: 2px;
-  margin-top: 20px;
+  width: rem(110px);
+  border-radius: rem(5px);
+  padding-top: rem(2px);
+  margin-top: rem(20px);
   border:none;
-  font-family: Ubuntu;
+  // font-family: Ubuntu;
   background-color:  #2f3234;
   color:  #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
-  line-height: 30px;
+  line-height: rem(30px);
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;

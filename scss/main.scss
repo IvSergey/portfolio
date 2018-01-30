@@ -8,6 +8,12 @@
 @import "layout/_base.scss";
 @import "layout/_adjustment.scss";
 
+
+
+
+// media
+@import"config/_media.scss";
+
 // section
 @import "section/_natural.scss";
 @import "section/_best.scss";
@@ -19,3 +25,5 @@
 @import "section/_order.scss";
 @import "section/_map.scss";
 @import "section/_footer.scss";
+
+

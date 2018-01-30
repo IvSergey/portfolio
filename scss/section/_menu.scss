@@ -10,7 +10,7 @@
 .menu__container{
   display: flex;
   width: 100%;
-  min-height: 650px;
+  min-height: rem(650px);
   flex-direction:row;
   justify-content: flex-end;
 }
@@ -30,7 +30,7 @@
   position: absolute;
   font-family: gagalin;
   color:  #ffffff;
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
   
   text-align: left;
@@ -87,7 +87,7 @@
 .menu__bg{
   background-color: #4c4e50;
   position: relative;
-  width: 80px;
+  width: rem(80px);
     
 }
 

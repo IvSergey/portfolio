@@ -1,3 +1,15 @@
+html{
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include tablets {
+    font-size: 15px;
+  }
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +27,8 @@ body {
 
 body, html {
   height: 100%;
+  font-size: rem(16px);
+
 }
 
 ul {
@@ -52,9 +66,9 @@ p {
 .visuallyhidden {
   position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: rem(1px);
+  height:rem(1px);
+  margin:rem(-1px);
   border: 0;
   padding: 0;
 

@@ -8,7 +8,7 @@
 }
 
 .natural__container{
-	min-height: 650px;
+	min-height: rem(650px);
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -23,7 +23,7 @@
 .natural__content{
 	display: flex;
     width: 100%;
-    margin-top: 83px;
+    margin-top: rem(83px);
 
 }
 
@@ -43,7 +43,7 @@
 .desc__title{
     font-family: gagalin;
     color: #f9b43b;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
     text-align: left;
     padding-bottom: 11px
@@ -53,11 +53,11 @@
 	
     font-family: lifehack;
     color: #ffffff;
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
     text-align: left;
     line-height: 0.94;
-    letter-spacing: -2px;
+    letter-spacing: rem(-2px);
     
 
 }

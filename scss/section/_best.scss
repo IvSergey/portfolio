@@ -11,7 +11,7 @@
 }
 
 .best__container{
-	min-height: 650px;
+	min-height: rem(650px);
    display: flex;
    align-self: flex-start;
    
@@ -20,12 +20,12 @@
 
 .title{
 	
-    padding-bottom: 5px;
+    padding-bottom: rem(5px);
 }
 
 .title__text{
 	font-family: gagalin;
-	font-size: 72px;
+	font-size: rem(72px);
 	font-weight: 400;
 	color: #2f3234;
 	text-transform: uppercase;
@@ -50,7 +50,7 @@
 }
 
 .advantages__inner {
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-right: 0;
@@ -58,11 +58,11 @@
 }
 
 .advantages__img{
-	width: 97px;
-	height: 94px;
+	width: rem(97px);
+	height: rem(94px);
 	background-position: center center;
   	background-repeat: no-repeat;
-  	margin-bottom: 16px;
+  	margin-bottom: rem(16px);
   
 }
 
@@ -87,21 +87,21 @@
 .advantages__subtitle{
 	font-family: Lifehack;
 	color:  #2f3234;
-	font-size: 23px;
+	font-size: rem(23px);
 	font-weight: 500;
-	line-height: 28px;
+	line-height: rem(28px);
 	text-align: center;
 	
-    padding-top: 9px;
+    padding-top: rem(9px);
 }
 
 .advantages__text{
 	font-family: Ubuntu;
 	color:  #2f3234;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 300;
-	line-height: 24px;
+	line-height: rem(24px);
 	text-align: center;
-	margin-top: -5px;
+	margin-top: rem(-5px);
 }
 
