@@ -25,11 +25,18 @@
     width: 100%;
     margin-top: rem(83px);
 
+    @include tablets() {
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
 }
 
 .banner{
 	width: 50%;
-   
+    
 }
 
 
@@ -37,6 +44,14 @@
 .desc{
 	padding-top: 8rem;
     width: 50%;
+
+    @include tablets() {
+        padding-top: 0;
+        text-align: center;
+    }
+
+
+    
 }
 
 
@@ -46,7 +61,12 @@
     font-size: rem(72px);
     font-weight: 400;
     text-align: left;
-    padding-bottom: 11px
+    padding-bottom: rem(11px);
+
+    @include tablets() {
+       
+        text-align: center;
+    }
 }
 
 .desc__text{
@@ -58,6 +78,11 @@
     text-align: left;
     line-height: 0.94;
     letter-spacing: rem(-2px);
+
+    @include tablets() {
+        
+        text-align: center;
+    }
     
 
 }

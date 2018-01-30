@@ -38,6 +38,10 @@
 
 .header__menu{
   padding-top: rem(12px);
+
+  @include tablets() {
+    display: none;
+  }
 }
 
 

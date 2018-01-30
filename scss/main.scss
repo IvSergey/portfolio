@@ -2,6 +2,7 @@
 
 @import "config/_variables.scss";
 @import "config/_mixins.scss";
+@import"config/_media.scss";
 
 // base
 @import "layout/_fonts.scss";
@@ -12,7 +13,7 @@
 
 
 // media
-@import"config/_media.scss";
+
 
 // section
 @import "section/_natural.scss";
