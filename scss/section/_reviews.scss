@@ -4,10 +4,11 @@
   align-content: center;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .reviews__container {
-  min-height: 650px;
+  min-height: rem(650px);
   margin: auto;
   width: 100%;
   display: flex;
@@ -30,9 +31,9 @@
 }
 
 .reviews__img {
-  width: 100%;
+  width: 100vw;
 
-  height: 50%;
+  height: 50vh;
   
   filter: grayscale(1);
   background-size: cover;
