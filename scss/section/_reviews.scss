@@ -23,7 +23,18 @@
   display: flex;
   position: relative;
   width: 25%;
+  height: 50%;
   justify-content: center;
+
+   @include tablets() {
+       width: 50%;
+       height: 25%;
+    }
+
+    @include phones() {
+       width: 50%;
+       height: 25%;
+    }
 }
 
 .reviews__inner:hover .reviews__item {
@@ -71,6 +82,10 @@
   font-size: rem(14px);
   color: #ffffff;
   line-height: rem(24px); 
+
+    @include phones() {
+        display: none;
+    }
 }
 
 .btn__more{

@@ -12,11 +12,21 @@
 .footer__container{
   min-height: rem(60px);
   flex-direction:row;
+   @include phones() {
+       flex-direction:column; 
+       
+    }
+
 }
 
 .footer__contacts{
   text-align: left;
   margin-right: auto;
+   @include phones() {
+       flex-direction:column; 
+       text-align: center;
+       width: 451px;
+    }
 }
 
 .footer__address{

@@ -12,6 +12,9 @@
   
       padding-top: 5%;
     padding-bottom: 5%;
+      @include tablets() {
+       max-width:768px; 
+    }
 }
 
 .form{
@@ -46,6 +49,34 @@
     font-size: rem(72px);
     font-weight: 400;
     margin-bottom: rem(23px);
+      @include tablets() {
+        font-size: rem(50px);
+    }
+    @include phones() {
+        
+        align-self: flex-start;
+        width: 448px;
+        padding-left: 127px
+        
+
+    }
+}
+
+.form__elem{
+    @include tablets() {
+        flex-direction:column;
+        align-items:center;
+        width: 1200px;
+
+    }
+
+    @include phones() {
+        flex-direction:column;
+        align-items:flex-start;
+        width: 563px;
+        
+
+    }
 }
 
 .form__content_location{
@@ -155,7 +186,7 @@
   padding-top: rem(2px);
    margin-top: rem(6px);
   border:none;
-  
+  font-family: Ubuntu;
   background-color:  #e45028;
   color:  #ffffff;
   font-size: rem(13px);
@@ -172,7 +203,7 @@
     padding-top: rem(2px);
     margin-top: rem(6px);
     border:none;
-    // font-family: Ubuntu;
+    font-family: Ubuntu;
     color:  #ffffff;
     font-size: rem(14px);
     font-weight: 500;

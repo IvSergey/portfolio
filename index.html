@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width", initial-scale=1.0>
 	<title>Mr.Burger</title>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -52,48 +52,33 @@
 							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">о нас</div>
-										</a>
+										<a href="#" class="nav__link">о нас</a>
+									</li>
+									<li class="nav__item">					
+										<a href="#" class="nav__link">бургеры</a>
+									</li>	
+									<li class="nav__item">
+										<a href="#" class="nav__link">команда</a>
+									</li>
+								
+									<li class="nav__item">
+										<a href="#" class="nav__link">меню</a>
+									</li>		
+									<li class="nav__item">
+										<a href="#" class="nav__link">отзывы</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">бургеры</div>
-										</a>
+										<a href="#" class="nav__link">контакты</a>
 									</li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">команда</div>
-										</a>
-									</li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">меню</div>
-										</a>
-									</li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">отзывы</div>
-										</a>
-									</li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="nav__text">контакты</div>
-										</a>
-									</li>
-									<li class="nav__item">
-										<a href="#" class="nav__link">
-											<div class="order-link">Заказать</div>
-										</a>
-									</li>
+								</ul>	
+								<a class="order-link">Заказать</a>	
+								<button class="nav-popup__btn"></button>	
+							</nav>			
+						</div>
 
-
-								</ul>
-							</nav>	
-						<<!-- /div>
-						<div class="">
-							<button class="order-link">Заказать</button>
-						</div> -->
+								
+							
+						
 				</div>
 			</div>		
 		</header>
@@ -135,7 +120,7 @@
 			<section class="section best">
 				<div class="container best__container">
 					<h2 class="title">
-						<div class="title__text">мы лучшие</div>
+						мы лучшие
 					</h2>
 					<ul class="advantages">
 						<li class="advantages__inner">
@@ -206,7 +191,7 @@
 		            				
 			            				<h3 class="team__subtitle">Оператор</h3>
 			            				<div class="team__text">
-			            					<p>С радостью поможет подобрать идеальный бургер и офрмить заказ.</p>
+			            					<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
 			            				</div>
 			            			</div>
 		            			</div>	
@@ -432,8 +417,8 @@
 	                                </label>
 	                            </div>
 	                            <div class="form__row form__rowcenter">
-	                                <button class="btn order__btn">Заказать</button>
-	                                <button class="btn order__btn-clear">Очистить</button>
+	                                <button type="submit" class="btn order__btn">Заказать</button>
+	                                <button type="reset" class="btn order__btn-clear">Очистить</button>
 	                            </div>
 	                        </div>
 	                    </form>

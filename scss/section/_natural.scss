@@ -14,7 +14,17 @@
    justify-content: center;
    align-items: center;
 	
+    @include tablets() {
 
+       width: 768px;
+
+    }
+
+     @include phones() {
+
+       width: 468px;
+
+    }
 	
 }
 
@@ -29,14 +39,21 @@
 
         flex-direction:column;
         align-items:center;
+        padding-top: 63px;
 
     }
+
+
 
 }
 
 .banner{
 	width: 50%;
-    
+     @include tablets() {
+
+        width: auto;
+
+    }
 }
 
 
@@ -48,6 +65,7 @@
     @include tablets() {
         padding-top: 0;
         text-align: center;
+        width: auto;
     }
 
 
@@ -66,6 +84,7 @@
     @include tablets() {
        
         text-align: center;
+        font-size: rem(50px);
     }
 }
 
@@ -80,8 +99,9 @@
     letter-spacing: rem(-2px);
 
     @include tablets() {
-        
+        width: 482px;
         text-align: center;
+        font-size: rem(50px);
     }
     
 
