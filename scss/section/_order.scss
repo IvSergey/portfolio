@@ -2,10 +2,11 @@
   background: url('../img/background/bg-texture.png') center center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  position: relative;
 }
 
 .order__container{
-  height: 100vh;
+  min-height: rem(650px);
   display: flex;
   flex-direction:column;
   align-items:center;
@@ -61,26 +62,26 @@
       @include tablets() {
         font-size: rem(50px);
         text-align: center;
+        
+    }
+     @include phones() {
+        
+        width: rem(460px);
     }
     
 }
 
-// .form__elem{
-//     @include tablets() {
-//         flex-direction:column;
-//         align-items:center;
-//         width: 1200px;
-
-//     }
-
-//     @include phones() {
-//         flex-direction:column;
-//         align-items:flex-start;
-//         width: 563px;
+.form{
+    @include tablets() {
+      display: flex;
+        flex-direction:column;
+        align-items:center;
         
 
-//     }
-// }
+    }
+
+    
+}
 
 .form__content_location{
   width: 50%;
@@ -90,9 +91,6 @@
   width: 50%;
 }
 
-.form__elem{
-  display: flex;
-}
 
 .form__input_comment{
   height: 6.78rem;

@@ -24,15 +24,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 475px
-}
-
-.burger-slide__btn-left{
-   position: absolute;
-    left: 10%;
-    fill: white;
-    transform: rotate(90deg);
-
+    min-height: 475px;
     .btn-left__svg {
     width: 26px;
     height: 17px;
@@ -49,6 +41,14 @@
     width: 26px;
     height: 17px;
     }
+}
+
+.burger-slide__btn-left{
+   position: absolute;
+    left: 10%;
+    fill: white;
+    transform: rotate(90deg);
+
 }
 
 .slide__decor {

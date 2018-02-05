@@ -107,12 +107,7 @@ a{
 .team__accordeon-inner{
   margin-bottom: rem(25px);
 
-     @include tablets() {
-
-       padding-left: 196px;
-       
-
-    }
+    
 }
 
 .team__accordeon-inner--active{

@@ -2,7 +2,7 @@
 	background: url('../img/background/bg-first.jpg')  center center no-repeat;
 	background-size: cover;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     
     
 }
@@ -42,10 +42,17 @@
         padding-top: 63px;
 
     }
+    @include phones() {
 
+        flex-direction:column;
+        align-items:center;
+        padding-top: 63px;
 
+  
+    }
 
 }
+
 
 .banner{
 	width: 50%;
@@ -99,7 +106,7 @@
     letter-spacing: rem(-2px);
 
     @include tablets() {
-        width: 482px;
+        width: 462px;
         text-align: center;
         font-size: rem(50px);
     }

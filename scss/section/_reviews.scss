@@ -3,7 +3,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -42,10 +42,10 @@
        height: 25%;
     }
 
-    @include phones() {
-       width: 50%;
-       height: 25%;
-    }
+    // @include phones() {
+    //    width: 50%;
+    //    height: 25%;
+    // }
 }
 
 .reviews__inner:hover .reviews__item {
@@ -60,7 +60,11 @@
   filter: grayscale(1);
   object-fit: cover;
   position: relative;
-   
+    @include tablets() {
+       width: 100%;
+       
+    }
+
 }
 
 
