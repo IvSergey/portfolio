@@ -16,6 +16,17 @@
   justify-content:center;
   align-content:center;
   flex-wrap:wrap;
+    @include tablets() {
+
+       width: 768px;
+
+    }
+
+     @include phones() {
+
+       width: 468px;
+
+    }
 
 }
 
@@ -47,7 +58,7 @@
   height: 50vh;
   
   filter: grayscale(1);
-  background-size: cover;
+  object-fit: cover;
   position: relative;
    
 }

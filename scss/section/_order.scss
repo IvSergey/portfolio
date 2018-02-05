@@ -12,8 +12,17 @@
   
       padding-top: 5%;
     padding-bottom: 5%;
-      @include tablets() {
-       max-width:768px; 
+
+       @include tablets() {
+
+       width: 768px;
+
+    }
+
+     @include phones() {
+
+       width: 468px;
+
     }
 }
 
@@ -51,33 +60,27 @@
     margin-bottom: rem(23px);
       @include tablets() {
         font-size: rem(50px);
+        text-align: center;
     }
-    @include phones() {
-        
-        align-self: flex-start;
-        width: 448px;
-        padding-left: 127px
-        
-
-    }
+    
 }
 
-.form__elem{
-    @include tablets() {
-        flex-direction:column;
-        align-items:center;
-        width: 1200px;
+// .form__elem{
+//     @include tablets() {
+//         flex-direction:column;
+//         align-items:center;
+//         width: 1200px;
 
-    }
+//     }
 
-    @include phones() {
-        flex-direction:column;
-        align-items:flex-start;
-        width: 563px;
+//     @include phones() {
+//         flex-direction:column;
+//         align-items:flex-start;
+//         width: 563px;
         
 
-    }
-}
+//     }
+// }
 
 .form__content_location{
   width: 50%;
