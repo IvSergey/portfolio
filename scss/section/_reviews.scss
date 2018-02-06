@@ -30,6 +30,11 @@
 
 }
 
+.reviews__inner:hover .reviews__item {
+  opacity: 1; 
+   
+}
+
 .reviews__inner{
   display: flex;
   position: relative;
@@ -41,6 +46,7 @@
    @include tablets() {
        width: 50%;
        height: 25%;
+
     }
 
     @include phones() {
@@ -49,9 +55,7 @@
     }
 }
 
-.reviews__inner:hover .reviews__item {
-  opacity: 1; 
-}
+
 
 .reviews__img {
   width: 100%;
@@ -89,7 +93,7 @@
   align-self:center;
     @include tablets() {
        width: 48vw;
-       height: 100vh;
+       height: 25vh;
     }
 }
 
