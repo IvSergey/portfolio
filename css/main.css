@@ -1150,7 +1150,7 @@ h3 {
       -ms-flex-direction: column;
       flex-direction: column;
       text-align: center;
-      width: 451px; } }
+      width: 100%; } }
 
 .footer__address {
   font-size: 0.875rem;

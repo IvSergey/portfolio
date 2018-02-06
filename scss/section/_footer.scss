@@ -31,7 +31,7 @@
    @include phones() {
        flex-direction:column; 
        text-align: center;
-       width: 451px;
+       width: 100%;
     }
 }
 
