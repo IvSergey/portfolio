@@ -11,6 +11,7 @@
   min-height: rem(650px);
   // margin: auto;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction:row;
   justify-content:center;
@@ -41,8 +42,12 @@
   width: 25%;
   height: 50%;
   justify-content: center;
+  align-items: center;
   
-
+   //     @media screen and (max-width: 1350px) {
+   //     width: 33.3%;
+   //     height: 33.3%;
+   // }
    @include tablets() {
        width: 50%;
        height: 25%;
@@ -65,8 +70,10 @@
   filter: grayscale(1);
   object-fit: cover;
   position: relative;
+
+  
   @include tablets() {
-       width: 50vw;
+       width: 49vw;
        height: 25vh;
     }
     @include phones() {
@@ -114,16 +121,13 @@
 .reviews__text {
   font-size: rem(14px);
   color: #ffffff;
-  line-height: rem(24px); 
-   @include tablets() {
-      line-height: rem(12px);
-    }
+  
+    
 
-   
-
-    @include phones() {
+      @include phones() {
         display: none;
     }
+   
 }
 
 .btn__more{
