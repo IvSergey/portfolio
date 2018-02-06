@@ -16,13 +16,13 @@
 
        @include tablets() {
 
-       width: 720px;
+       width: 100%;
 
     }
 
      @include phones() {
 
-       width: 450px;
+       width: 100%;
 
     }
 }

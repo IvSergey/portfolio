@@ -18,13 +18,13 @@
   flex-wrap:wrap;
     @include tablets() {
 
-       width: 768px;
+       width: 100%;
 
     }
 
      @include phones() {
 
-       width: 468px;
+       width: 100%;
 
     }
 
@@ -88,8 +88,8 @@
   position: absolute;
   align-self:center;
     @include tablets() {
-       width: 44vw;
-       height: 25vh;
+       width: 48vw;
+       height: 100vh;
     }
 }
 
@@ -99,6 +99,7 @@
   font-family: gagalin;
   // margin-top: 5vh;
   margin-bottom: rem(30px);
+ 
 }
 
 .reviews__text {
