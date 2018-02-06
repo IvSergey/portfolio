@@ -66,6 +66,14 @@
     }
 }
 
+.img-pic{
+    @include phones() {
+
+        width: 100%;
+
+    }
+}
+
 
 
 .desc{

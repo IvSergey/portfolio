@@ -170,6 +170,10 @@ p {
     .banner {
       width: auto; } }
 
+@media screen and (max-width: 480px) {
+  .img-pic {
+    width: 100%; } }
+
 .desc {
   padding-top: 8rem;
   width: 50%; }
@@ -258,7 +262,10 @@ p {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .advantages__inner {
   width: 33%;
@@ -277,7 +284,12 @@ p {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
-      flex-direction: row; } }
+      flex-direction: row;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      text-align: left; } }
 
 .advantages__inner {
   margin-right: 1.25rem; }
@@ -286,7 +298,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .advantages__desc {
-    margin-left: 24px; } }
+    margin-left: auto; } }
 
 .advantages__img {
   width: 6.0625rem;
@@ -318,9 +330,6 @@ p {
   line-height: 1.75rem;
   text-align: center;
   padding-top: 0.5625rem; }
-  @media screen and (max-width: 480px) {
-    .advantages__subtitle {
-      text-align: left; } }
 
 .advantages__text {
   color: #2f3234;
@@ -329,10 +338,6 @@ p {
   line-height: 1.5rem;
   text-align: center;
   margin-top: -0.3125rem; }
-  @media screen and (max-width: 480px) {
-    .advantages__text {
-      width: 320px;
-      text-align: left; } }
 
 .header {
   width: 95%;
