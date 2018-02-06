@@ -9,7 +9,7 @@
 }
 
 .team__container {
-  
+  min-height: rem(650px);
   display: flex;
   align-items: center;
   justify-content:center;
@@ -28,8 +28,11 @@
 .team__content{ 
   display: flex;
   flex-direction:column;
+  align-items: center;
+
   width: 70%;
     @include tablets() {
+      width: 100%;
        align-items:center;
     }
 }
@@ -69,7 +72,7 @@ a{
   color:  #ffffff;
   font-size: rem(14px);
   font-weight: 300;
-  line-height: rem(24px);
+  // line-height: rem(24px);
   width: rem(209px);
 
   
@@ -88,7 +91,10 @@ a{
   cursor: pointer;
     background: none;
     border: none;
-
+         @include tablets() {
+          font-size: rem(16px);
+        text-align: center;
+    }
   
 
   }
@@ -125,12 +131,12 @@ a{
   .team__accordeon-description{
     height: auto;
     display: flex;
-      @include tablets() {
+    //   @include tablets() {
 
-       flex-direction:column;
+    //    flex-direction:column;
        
 
-    }
+    // }
   }
   
 }
@@ -152,8 +158,6 @@ a{
 
 
 
-.team__accordeon-description{
-  display: flex;
-}
+
 
 

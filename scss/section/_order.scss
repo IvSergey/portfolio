@@ -74,6 +74,16 @@
 
 .form{
     @include tablets() {
+      width: 60%;
+      display: flex;
+        flex-direction:column;
+        align-items:center;
+        
+
+    }
+
+     @include phones() {
+      width: 95%;
       display: flex;
         flex-direction:column;
         align-items:center;
@@ -100,6 +110,7 @@
 .form__check{
   display: flex;
   margin-right: rem(25px);
+  
 }
 
 .form__radio{
