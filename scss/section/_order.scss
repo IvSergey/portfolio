@@ -1,7 +1,7 @@
 .order {
   background: url('../img/background/bg-texture.png') center center no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -16,13 +16,13 @@
 
        @include tablets() {
 
-       width: 768px;
+       width: 720px;
 
     }
 
      @include phones() {
 
-       width: 468px;
+       width: 450px;
 
     }
 }
@@ -66,7 +66,7 @@
     }
      @include phones() {
         
-        width: rem(460px);
+        width: 200px;
     }
     
 }
@@ -83,13 +83,13 @@
     
 }
 
-.form__content_location{
-  width: 50%;
-}
+// .form__content_location{
+//   width: 50%;
+// }
 
-.form__content_comments{
-  width: 50%;
-}
+// .form__content_comments{
+//   width: 50%;
+// }
 
 
 .form__input_comment{
