@@ -36,7 +36,7 @@
     margin-top: rem(83px);
 
     @include tablets() {
-
+        width: 100%;
         flex-direction:column;
         align-items:center;
         padding-top: 63px;
@@ -44,7 +44,7 @@
 
     }
     @include phones() {
-
+        width: 100%;
         flex-direction:column;
         align-items:center;
         padding-top: 63px;

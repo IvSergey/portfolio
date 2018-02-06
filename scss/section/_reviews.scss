@@ -92,8 +92,10 @@
   position: absolute;
   align-self:center;
     @include tablets() {
-       width: 48vw;
-       height: 25vh;
+      height: 100%;
+      width: 100%;
+       align-items: center;
+    text-align: center
     }
 }
 
@@ -103,6 +105,9 @@
   font-family: gagalin;
   // margin-top: 5vh;
   margin-bottom: rem(30px);
+  @include tablets() {
+      margin-bottom: 0;
+    }
  
 }
 
@@ -110,6 +115,9 @@
   font-size: rem(14px);
   color: #ffffff;
   line-height: rem(24px); 
+   @include tablets() {
+      line-height: rem(12px);
+    }
 
    
 
