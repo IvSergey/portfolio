@@ -81,6 +81,9 @@
 }
 .slide-pic{
   width: 100%;
+    @include tablets() {
+       width: 85%;
+      } 
   
 }
 
@@ -180,11 +183,12 @@
   font-weight: 400;
   line-height: rem(63px);
 
-  
 
+  @include phones() {
+            font-size: rem(50px);
+          }
 
-  
-   
+     
 }
 
 .slide__text{

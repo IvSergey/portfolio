@@ -1296,6 +1296,9 @@ h3 {
 
 .slide-pic {
   width: 100%; }
+  @media screen and (max-width: 768px) {
+    .slide-pic {
+      width: 85%; } }
 
 .slide__decor-burger {
   font-family: Gagalin;
@@ -1392,6 +1395,9 @@ h3 {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 3.9375rem; }
+  @media screen and (max-width: 480px) {
+    .slide__title {
+      font-size: 3.125rem; } }
 
 .slide__text {
   color: #ffffff;
