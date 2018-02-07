@@ -1,7 +1,6 @@
 .burger-slide {
-  background: url('../img/background/bg-slide.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(90deg, #f9b43b 0%, #eb8c38 47%, #f9b43b 73%);
+  display: flex;
   
   position: relative;
   height: 100vh;
@@ -10,64 +9,92 @@
 
 .burger-slide__container {
   // width: 100%;
-  height: 100%;
+  min-height: rem(650px);
   display: flex;
   align-items: center;
   justify-content:center;
+  flex-direction:row;
   // position: absolute;
+     
  
 
    }
 
-.burger-slide__content{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 475px;
-    .btn-left__svg {
-    width: 26px;
-    height: 17px;
+
+
+.burger-slide__btn-left{
+  display: flex;
+  fill: white;
+  transform: rotate(90deg);
+  cursor: pointer;
+
+   .btn-left__svg {
+    width: rem(26px);
+    height: rem(17px);
     }
+
+}
+
+.burger-slide__content{
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+         @include tablets() {
+
+       flex-direction:column;
+       text-align: center;
+    }
+
 }
 
 .burger-slide__btn-right{
-   position: absolute;
-    right: 10%;
-    fill: white;
-    transform: rotate(-90deg);
+  display: flex;
+  fill: white;
+  transform: rotate(-90deg);
+  cursor: pointer;
 
     .btn-right__svg {
-    width: 26px;
-    height: 17px;
+    width: rem(26px);
+    height: rem(17px);
     }
 }
 
-.burger-slide__btn-left{
-   position: absolute;
-    left: 10%;
-    fill: white;
-    transform: rotate(90deg);
 
-}
 
 .slide__decor {
-    width: 55%;
-    height: 100%;
+    width: 50%;
+    // height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+        @include tablets() {
+       width: 90%;
+       padding-top:15%;
+    }
+    
 }
+
+
+.slide__decor-banner{
+  width: 100%;
+}
+.slide-pic{
+  width: 100%;
+  
+}
+
+
 
 .slide__decor-burger {
     font-family: Gagalin;
     font-size: rem(14px);
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 90px;
-    height: 90px;
-    border-radius: 5px;
+    top: rem(170px);
+    left: 0;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
     background: #ee832d;
     color: white;
     display: flex;
@@ -76,25 +103,33 @@
     justify-content: center;
     text-decoration: uppercase;
     // margin-left: rem(83px);
+         @include tablets() {
+
+       top:4%;
+       left: 8%;
+    }
+         @include phones() {
+
+       width: auto;
+    }
+   
+
 }
 
 .burger__svg {
     fill:#fff;
-    width: 45px;
-    height: 45px;
+    width: rem(45px);
+    height: rem(45px);
 }
 
-.slide__decor-banner{
-      // width: rem(450px);
-    
-}
+
 
 .slide__decor-kkal {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    min-width: 70px;
-    min-height: 80px;
+    bottom: rem(170px);
+    left: 0;
+    min-width: rem(70px);
+    min-height: rem(80px);
     font-family: Gagalin;
     font-weight: 400;
     font-size: rem(14px);
@@ -105,7 +140,15 @@
     justify-content: center;
     text-decoration: uppercase;
     opacity: .5;
-    // margin-left: rem(83px);
+    
+        @include tablets() {
+
+        top: 5%;
+        right: 8%;
+        bottom: auto;
+        left: auto;
+    }
+
 }
 
 .kkal__count {
@@ -115,21 +158,31 @@
 
 .kkal__svg {
   fill:#fff;
-    width: 60px;
-    height: 60px;
+    width: rem(60px);
+    height: rem(60px);
 }
 
 .slide__desc{
-  // width: rem(580px);
+  width: 50%;
+
+           @include tablets() {
+            width: 80%;
+            padding-top: 5%;
+    
+    }
 }
 
 .slide__title {
+      margin-bottom: rem(41px);
     font-family: Gagalin;
   color:  #ffffff;
   font-size: rem(72px);
   font-weight: 400;
-  line-height: rem(63.745px);
-  width: rem(346px);
+  line-height: rem(63px);
+
+  
+
+
   
    
 }
@@ -139,7 +192,7 @@
     font-weight: 300;
     font-size: rem(14px);
     line-height: rem(24px);
-    width: rem(447px);
+    
 }
 
 .slide__price {
@@ -148,12 +201,17 @@
     font-size: rem(72px);
     color: #e35028;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: rem(30px);
+
+        @include tablets() {
+
+       top:0;
+    }
 }
 
 .slide__price-rub {
-    font-size: 30px;
+    font-size: rem(30px);
     text-decoration: uppercase;
-    margin-left: -15px;
+    margin-left: rem(-15px);
 }
 
