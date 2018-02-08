@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	
 </head>
 <body>
 	<div class="wrapper">
@@ -39,7 +40,8 @@
 					</li>				
 				</ul>					
 			<!-- </div> -->
-		</div>	
+		</div>
+		
 		<header class="header">
 			<div class="container header__container">
 				<div class="header__content">
@@ -72,7 +74,10 @@
 									</li>
 								</ul>	
 								<a class="order-link">Заказать</a>	
-								<button class="nav-popup__btn"></button>	
+								<button id="gamb-menu"  class="gamb__btn">
+									
+								</button>
+								
 							</nav>			
 						</div>
 
@@ -111,6 +116,35 @@
 							</div>
 						
 					</div>
+					<div id="navigation" class="header__navigation">
+						<a class="header__logo">
+							<img src="img/icons/logo.svg" alt="Mr.Burger" class="logo__img">
+						</a>
+						<!-- <button class="header__btn--active"></button> -->
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">о нас</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">бургеры</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">команда</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#" class="navigation__link">меню</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#reviews" class="navigation__link">отзывы</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#order" class="navigation__link">контакты</a>
+							</li>
+							<li class="navigation__item">
+								<a href="#contacts" class="navigation__link">заказать</a>
+							</li>
+						</ul>
+					</div>		
 					
 				</div>	
 				
@@ -472,8 +506,7 @@
 	        </section>
 	        <section class="map">
 	            <div id="map" class="map"> </div>   
-		         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-		         <script src="main.js" type="text/javascript"></script> 	
+		         
 
 	        </section>    
   		</div>
@@ -521,8 +554,12 @@
 	            </div>
 	        </div>
 	    </footer>
+
            
-                 	
+     	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script> 	            	
+
+
 </body>
 </html>                         
                       

@@ -51,6 +51,34 @@ function init() {
 	});
 }
 
+// let gamb = document.getElementById("gamb-menu");
+
+
+
+// gamb.addEventListener("click", function(e) { 
+// 	var header__navigation--active = document.getElementById("navigation");
+// 	if (header__navigation--active.style.display = 'flex') {
+
+// 		gamb__btn--active.style.display = 'none';
+
+// 	}
+
+
+//  });
+
+let gamb = document.getElementById('gamb-menu');
+
+gamb.addEventListener('click', function() {
+    if (navigation.classList.contains('header__navigation--active')) {
+        navigation.classList.remove('header__navigation--active');
+        gamb.classList.remove('gamb__btn--active')
+    }
+    else {
+        navigation.classList.add('header__navigation--active');
+        gamb.classList.add('gamb__btn--active')
+    }
+});
+
 
 
 

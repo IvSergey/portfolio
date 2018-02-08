@@ -126,7 +126,7 @@
     
 }
 
-.nav-popup__btn{
+.gamb__btn{
 
      position: relative;
     display: none;
@@ -135,6 +135,7 @@
     border: none;
     border-radius: 2px;
     background-color: #ffffff;
+    cursor: pointer;
 
    &:before{
     top: -10px;
@@ -147,6 +148,7 @@
     border: none;
     border-radius: 2px;
     background-color: #ffffff;
+
    
    }
 
@@ -166,5 +168,8 @@
 
    @include tablets() {
     display: inline-block;
+        display: initial;
+    // z-index: 10;
   }
 }
+
