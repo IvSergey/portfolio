@@ -13,12 +13,11 @@
 .best__container{
 	min-height: rem(650px);
    display: flex;
-    // @include tablets() {
+    @include tablets() {
        
         
-    //     padding-left: 50px;
-    //     padding-right: 50px;
-    // }
+        width: 90%;
+    }
    
    
    

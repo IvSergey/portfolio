@@ -72,6 +72,10 @@
        width: 90%;
        padding-top:15%;
     }
+       @include phones() {
+       width: 100%;
+       padding-top:45%;
+    }
     
 }
 
@@ -111,11 +115,7 @@
        top:4%;
        left: 8%;
     }
-         @include phones() {
-
-       width: auto;
-    }
-   
+    
 
 }
 
@@ -152,6 +152,8 @@
         left: auto;
     }
 
+   
+
 }
 
 .kkal__count {
@@ -173,6 +175,10 @@
             padding-top: 5%;
     
     }
+            @include phones() {
+            width: 95%;
+                
+    }
     
 }
 
@@ -187,6 +193,7 @@
 
   @include phones() {
             font-size: rem(50px);
+            margin-bottom: 0;
           }
 
      
@@ -212,6 +219,10 @@
 
        top:0;
     }
+        @include phones() {
+
+       margin-right:0;
+    }
 }
 
 .slide__price-rub {
@@ -220,3 +231,6 @@
     margin-left: rem(-15px);
 }
 
+.slide__decor, .slide__desc{
+
+}
