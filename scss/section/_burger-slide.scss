@@ -72,9 +72,12 @@
        width: 90%;
        padding-top:15%;
     }
+            @media screen and (max-width: 580px) {
+            padding-top: 40%;;
+   }
        @include phones() {
        width: 100%;
-       padding-top:45%;
+       
     }
     
 }
@@ -175,9 +178,13 @@
             padding-top: 5%;
     
     }
+           @media screen and (max-width: 580px) {
+            padding-top: 20%;
+   }
+
             @include phones() {
             width: 95%;
-                
+            padding-top: 0;    
     }
     
 }

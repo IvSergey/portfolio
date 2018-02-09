@@ -1301,10 +1301,12 @@ h3 {
     .slide__decor {
       width: 90%;
       padding-top: 15%; } }
+  @media screen and (max-width: 580px) {
+    .slide__decor {
+      padding-top: 40%; } }
   @media screen and (max-width: 480px) {
     .slide__decor {
-      width: 100%;
-      padding-top: 45%; } }
+      width: 100%; } }
 
 .slide__decor-banner {
   width: 100%; }
@@ -1399,9 +1401,13 @@ h3 {
     .slide__desc {
       width: 80%;
       padding-top: 5%; } }
+  @media screen and (max-width: 580px) {
+    .slide__desc {
+      padding-top: 20%; } }
   @media screen and (max-width: 480px) {
     .slide__desc {
-      width: 95%; } }
+      width: 95%;
+      padding-top: 0; } }
 
 .slide__title {
   margin-bottom: 2.5625rem;
