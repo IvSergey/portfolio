@@ -72,13 +72,15 @@
        width: 90%;
        padding-top:15%;
     }
-            @media screen and (max-width: 580px) {
-            padding-top: 40%;;
-   }
+   
        @include phones() {
        width: 100%;
+       padding-top: 45%;
        
     }
+             @media screen and (max-width: 425px) {
+           padding-top: 50%;
+   }
     
 }
 
@@ -178,14 +180,16 @@
             padding-top: 5%;
     
     }
-           @media screen and (max-width: 580px) {
-            padding-top: 20%;
-   }
+
 
             @include phones() {
             width: 95%;
-            padding-top: 0;    
+              
     }
+             @media screen and (max-width: 425px) {
+           padding-top: 10%;
+   }
+
     
 }
 
@@ -230,12 +234,19 @@
 
        margin-right:0;
     }
+
+         @media screen and (max-width: 425px) {
+       font-size: rem(50px);
+   }
 }
 
 .slide__price-rub {
     font-size: rem(30px);
     text-decoration: uppercase;
     margin-left: rem(-15px);
+          @media screen and (max-width: 425px) {
+           font-size: rem(20px);
+   }
 }
 
 .slide__decor, .slide__desc{
