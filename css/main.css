@@ -904,11 +904,15 @@ a {
   overflow: hidden; }
 
 .menu__text-active {
+  padding: 0.625rem 0.625rem;
   width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(47, 50, 52, 0.8); }
+  @media screen and (max-width: 480px) {
+    .menu__text-active {
+      width: 100%; } }
 
 .menu__bg_meat {
   background-image: url("../img/background/bg-meat.png");
@@ -923,6 +927,7 @@ a {
   background-size: cover; }
 
 .menu__bg {
+  background-color: #4c4e50;
   position: relative;
   width: 5rem; }
 
@@ -1163,7 +1168,9 @@ h3 {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
 
 .footer__contacts {
   text-align: left;
@@ -1319,6 +1326,8 @@ h3 {
       width: 85%; } }
 
 .slide__decor-burger {
+  border: none;
+  cursor: pointer;
   font-family: Gagalin;
   font-size: 0.875rem;
   position: absolute;
@@ -1468,6 +1477,8 @@ h3 {
   background-color: rgba(47, 50, 52, 0.95); }
 
 .header__navigation--active {
+  position: fixed;
+  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

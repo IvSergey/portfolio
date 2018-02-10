@@ -99,6 +99,8 @@
 
 
 .slide__decor-burger {
+    border: none;
+    cursor: pointer;
     font-family: Gagalin;
     font-size: rem(14px);
     position: absolute;
@@ -249,6 +251,3 @@
    }
 }
 
-.slide__decor, .slide__desc{
-
-}

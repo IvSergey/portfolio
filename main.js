@@ -70,7 +70,8 @@ let gamb = document.getElementById('gamb-menu');
 
 gamb.addEventListener('click', function() {
     if (navigation.classList.contains('header__navigation--active')) {
-        navigation.classList.remove('header__navigation--active');
+
+    	navigation.classList.remove('header__navigation--active');
         gamb.classList.remove('gamb__btn--active')
     }
     else {
@@ -78,6 +79,27 @@ gamb.addEventListener('click', function() {
         gamb.classList.add('gamb__btn--active')
     }
 });
+
+ 
+
+// if ( navigation.addEventListener ) {
+
+//     navigation.addEventListener( "DOMMouseScroll", navigation.onmousewheel = function( e ) {
+
+//        e.preventDefault();
+
+//     }, false );
+
+// }
+
+    navigation.addEventListener( "wheel",function( e ) {
+    	 
+       e.preventDefault();
+
+    });
+
+
+
 
 
 

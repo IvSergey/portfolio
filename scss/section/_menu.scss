@@ -56,15 +56,21 @@
 }
 
 .menu__text{
+    
   color: #ffffff;
   width: 0;
   overflow: hidden;
 }
 
 .menu__text-active{
+   padding: rem(10px) rem(10px);
     width: 40vw;
     display: flex;
     background-color: rgba(47, 50, 52, 0.8);
+    @include phones() {
+        width: 100%;
+        
+    }
 }
 
 
@@ -91,7 +97,7 @@
 
 
 .menu__bg{
-  // background-color: #4c4e50;
+  background-color: #4c4e50;
   position: relative;
   width: rem(80px);
 
