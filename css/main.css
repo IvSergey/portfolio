@@ -19,6 +19,7 @@
     font-size: 14px; } }
 
 body {
+  overflow: auto;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -1477,8 +1478,6 @@ h3 {
   background-color: rgba(47, 50, 52, 0.95); }
 
 .header__navigation--active {
-  position: fixed;
-  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

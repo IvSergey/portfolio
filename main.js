@@ -70,39 +70,32 @@ let gamb = document.getElementById('gamb-menu');
 
 gamb.addEventListener('click', function() {
     if (navigation.classList.contains('header__navigation--active')) {
-
+    	document.body.style.overflowY ='auto';
     	navigation.classList.remove('header__navigation--active');
         gamb.classList.remove('gamb__btn--active')
     }
     else {
+    	document.body.style.overflowY ='hidden';
         navigation.classList.add('header__navigation--active');
         gamb.classList.add('gamb__btn--active')
     }
 });
 
  
+    // navigation.addEventListener( "wheel",function( e ) {
 
-// if ( navigation.addEventListener ) {
+    //    e.preventDefault();
 
-//     navigation.addEventListener( "DOMMouseScroll", navigation.onmousewheel = function( e ) {
-
-//        e.preventDefault();
-
-//     }, false );
-
-// }
-
-    navigation.addEventListener( "wheel",function( e ) {
-    	 
-       e.preventDefault();
-
-    });
+    // });
 
 
 
 
 
+// document.body.style.overflowY ='hidden';
 
+// const navigation = document.getElementById('navigation');
+// navigation.style.overflow ='hidden';
 
 
 
