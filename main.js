@@ -90,22 +90,6 @@ gamb.addEventListener('click', function() {
 
 
 
-// const accoTeam = document.getElementsByClassName('team__accordeon-inner');
-
-// for (let i = 0; i < accoTeam.length; i++) {
-//     accoTeam[i].addEventListener('click', function () {
-//         let activeClass = this.classList.contains('team__accordeon-inner--active');
-//         if (!activeClass) {
-//             for (let y = 0; y < accoTeam.length; y++) {
-//                 accoTeam[y].classList.remove('team__accordeon-inner--active');
-//                 accoTeam[i].classList.add('team__accordeon-inner--active');
-//             }
-//         }
-//         if (activeClass) {
-//             this.classList.remove('team__accordeon-inner--active');
-//         }
-//     });
-// }
 
 
 	

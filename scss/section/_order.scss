@@ -6,12 +6,7 @@
 }
 
 .order__container{
-  width: 100%;
-  min-height: rem(650px);
-  display: flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
+
   
       padding-top: 5%;
     padding-bottom: 5%;
@@ -25,6 +20,8 @@
      @include phones() {
 
        width: 100%;
+       padding-left: 20px;
+
 
     }
 }
@@ -67,8 +64,8 @@
         
     }
      @include phones() {
+        margin-bottom: 0;
         
-        // width: 200px;
     }
     
 }
@@ -84,7 +81,7 @@
     }
 
      @include phones() {
-      width: 95%;
+      width: 100%;
       display: flex;
         flex-direction:column;
         align-items:center;
@@ -111,6 +108,7 @@
 .form__check{
   display: flex;
   margin-right: rem(25px);
+
   
 }
 
@@ -154,6 +152,8 @@
 
 .form__checkbox{
   display: none;
+
+
 }
 
 .form__checkbox_hidden {

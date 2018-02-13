@@ -1,24 +1,16 @@
 .best{
 	background: url('../img/background/bg.png')  center bottom no-repeat;
 	background-size: cover;
-    display: flex;
-    vertical-align: middle;
+   
     height: 100vh;
     // width: 100%;
-    justify-content: center;
-    align-items: center;
+   
     
 }
 
 .best__container{
-	min-height: rem(650px);
-   display: flex;
 
-   @media screen and (max-width: 830px) {
-       
-        
-        width: 80%;
-    }
+
     @include tablets() {
        
         
@@ -77,7 +69,7 @@
 
         display: flex;
         width: 100%;
-    text-align: left
+    	text-align: left;
        
 
     }
@@ -95,7 +87,8 @@
 .advantages__desc{
 	@include phones() {
 
-        margin-left: auto;
+        margin-left: 16px;
+        text-align: left;
        
 
     }
@@ -138,13 +131,13 @@
 	
     padding-top: rem(9px);
 
-	// @include phones() {
+	@include phones() {
 
         
- //        text-align: left;
+        text-align: left;
        
 
- //    }
+    }
 
 }
 
@@ -159,12 +152,12 @@
 	text-align: center;
 	margin-top: rem(-5px);
 
-	   //  @include phones() {
+	    @include phones() {
 
-    //     width: rem(320px);
-    //     text-align: left;
+        
+        text-align: left;
        
 
-    // }
+    }
 }
 
