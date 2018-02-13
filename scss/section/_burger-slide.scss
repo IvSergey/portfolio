@@ -278,7 +278,7 @@
     // transform: translateY(-50%);
 }
 
-.burger-slide__btn-left{
+.burger-slide__btn-next{
   
   left: 5%;
   display: flex;
@@ -286,14 +286,14 @@
   transform: rotate(-90deg);
   cursor: pointer;
 
-   .btn-left__svg {
+   .btn-next__svg {
     width: rem(26px);
     height: rem(17px);
     }
 
 }
 
-.burger-slide__btn-right{
+.burger-slide__btn-prev{
   
   right: 5%;
   display: flex;
@@ -301,7 +301,7 @@
   transform: rotate(90deg);
   cursor: pointer;
 
-    .btn-right__svg {
+    .btn-prev__svg {
     width: rem(26px);
     height: rem(17px);
     }

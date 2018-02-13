@@ -1407,7 +1407,7 @@ h3 {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.burger-slide__btn-left {
+.burger-slide__btn-next {
   left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1417,11 +1417,11 @@ h3 {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   cursor: pointer; }
-  .burger-slide__btn-left .btn-left__svg {
+  .burger-slide__btn-next .btn-next__svg {
     width: 1.625rem;
     height: 1.0625rem; }
 
-.burger-slide__btn-right {
+.burger-slide__btn-prev {
   right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1431,7 +1431,7 @@ h3 {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   cursor: pointer; }
-  .burger-slide__btn-right .btn-right__svg {
+  .burger-slide__btn-prev .btn-prev__svg {
     width: 1.625rem;
     height: 1.0625rem; }
 
