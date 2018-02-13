@@ -981,6 +981,9 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 5%;
   padding-bottom: 5%; }
   @media screen and (max-width: 868px) {
