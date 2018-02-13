@@ -90,17 +90,180 @@ gamb.addEventListener('click', function() {
 
 
 
+// const accoTeam = document.getElementsByClassName('team__accordeon-inner');
 
-
-// document.body.style.overflowY ='hidden';
-
-// const navigation = document.getElementById('navigation');
-// navigation.style.overflow ='hidden';
-
-
-
-
-
+// for (let i = 0; i < accoTeam.length; i++) {
+//     accoTeam[i].addEventListener('click', function () {
+//         let activeClass = this.classList.contains('team__accordeon-inner--active');
+//         if (!activeClass) {
+//             for (let y = 0; y < accoTeam.length; y++) {
+//                 accoTeam[y].classList.remove('team__accordeon-inner--active');
+//                 accoTeam[i].classList.add('team__accordeon-inner--active');
+//             }
+//         }
+//         if (activeClass) {
+//             this.classList.remove('team__accordeon-inner--active');
+//         }
+//     });
+// }
 
 
 	
+
+	let current;
+	let accordeon = document.getElementById('accordeon');
+	accordeon.addEventListener('click', function (e) {
+	let target = e.target;
+	if(!target.classList.contains('team__name')){
+		return;	
+
+	};
+		
+	if (target.parentNode.classList.contains('team__accordeon-inner--active')) {
+		current = null;
+		target.parentNode.classList.toggle('team__accordeon-inner--active');
+	} else {
+		if (current) {
+			current.parentNode.classList.toggle('team__accordeon-inner--active')
+		}
+		current = target;
+		current.parentNode.classList.toggle('team__accordeon-inner--active');
+	}
+	
+	});
+
+
+
+
+// $(document).ready(function() {
+  
+// 	$('#accordeon').on('click', f_acc);
+// });
+ 
+// function f_acc(e){
+
+// 	if(e.target.className === "team__name") {
+
+// 		$('.team__accordeon-inner--active').not($(this).next()).slideUp(1000);
+
+//     	$(this).next().slideToggle(500);
+// 	}
+
+  
+// }
+
+
+// let accoTeam = document.getElementById('accordeon');
+
+// accoTeam.addEventListener('click', function(e) {
+// 	let target = e.target;
+//     if (accordeon.classList.contains('team__accordeon-inner--active')) {
+//     	accordeon.classList.remove('team__accordeon-inner--active');
+        
+//     }
+//     else {
+//     	  accordeon.classList.add('team__accordeon-inner--active');
+        
+//     }
+// });
+
+
+//gorizont accordion
+let currentMenu;
+let openMenu = document.getElementById("gorizont-accordeon");
+openMenu.addEventListener("click", function (e) {
+	let target = e.target;
+	// if(!target.classList.contains('menu__bg')) {
+	// 	return;
+	// }
+
+	// if (target.nextElementSibling.classList.contains('menu__text-active')) {
+	// 	current = null;
+	// 	target.nextElementSibling.classList.toggle('menu__text-active');
+	// } else {
+	// 	if (current) {
+	// 		current.nextElementSibling.classList.toggle('menu__text-active')
+	// 	}
+	// 	current = target;
+	// 	current.nextElementSibling.classList.toggle('menu__text-active');
+	// }
+
+
+	if(target.classList.contains('menu__bg')) {
+		if (target.nextElementSibling.classList.contains('menu__text-active')) {
+		current = null;
+		target.nextElementSibling.classList.toggle('menu__text-active');
+		} else {
+			if (current) {
+				current.nextElementSibling.classList.toggle('menu__text-active')
+			}
+			current = target;
+			current.nextElementSibling.classList.toggle('menu__text-active');
+		}
+	} else if (target.classList.contains('menu__subtitle')) {
+		if (target.parentNode.nextElementSibling.classList.contains('menu__text-active')) {
+		current = null;
+		target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
+		} else {
+			if (current) {
+				target.parentNode.nextElementSibling.classList.toggle('menu__text-active')
+			}
+			current = target;
+			target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
+		}
+	} else {
+		return;
+	}
+});
+
+
+// overlay
+
+// let openOverlay = document.getElementById('overlay');
+
+// openOverlay.addEventListener("click", function(e) {
+// 	let target = e.target;
+
+// 	if(!target.classList.contains('reviews-popup')) {
+// 		return;
+// 	}
+
+// 	const containerElement = document.createElement("div");
+//  	containerElement.classList.add("reviews-popup--active");
+
+//  	// document.body.appendChild(containerElement);
+
+// 	console.log("----")
+// })
+
+$(()=> {
+  var reviewsPopup = $(".reviews-popup"),
+        reviewsName = $(".reviews-popup__name", reviewsPopup),
+        reviewsText = $(".reviews-popup__text", reviewsPopup),
+        buttons = $(".btn__more"),
+        close = $(".reviews-popup__close");
+  var name, text;
+
+  buttons.on("click",e => {
+    var target = $(e.currentTarget);
+    name = target.siblings().first().text();
+    text = target.siblings().eq(1).text();
+    
+    
+  });
+  
+  var showPopup = function() {
+  	
+    reviewsName.text(name);
+    reviewsText.text(text);
+    reviewsPopup.toggleClass("reviews-popup--active");
+ 
+  };
+
+  buttons.on("click", showPopup);
+   close.on("click", showPopup);
+  
+  
+
+});
+

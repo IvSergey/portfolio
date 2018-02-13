@@ -154,8 +154,12 @@ a{
 }
 
 .team__accordeon-description{
-  height: 0;
-  overflow: hidden;
+  // display: flex;
+  // flex-direction:row;
+  // height: 0;
+  // overflow: hidden;
+  display: none;
+  
 
         @include tablets() {
         flex-direction: column;

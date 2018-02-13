@@ -1,0 +1,82 @@
+.reviews-popup{   
+    position: fixed;
+    top: 0;
+    display: none;
+    overflow-y: hidden;
+} 
+
+.reviews-popup--active {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(47, 50, 52, 0.95); }
+
+.reviews-popup__container {
+    position: relative;
+    padding: 25px 15px;
+    width: 472px;
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    @include phones() {
+        width: 95%;
+        
+    }
+}
+
+.reviews-popup__close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ec8468;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ec8468;
+    transform: rotate(90deg);
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ec8468;
+    transform: rotate(90deg);
+  }
+}
+
+.reviews-popup__name {
+    font-family: "Gagalin";
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+.review-popup__text {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    line-height: 1.5rem;
+}
+
