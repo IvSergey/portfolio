@@ -18,10 +18,13 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+
 }
 
 
 .slider__list{
+  display: flex;
+    width: 3000px;
   position: absolute;
   top: 30%;
   left: 11%;
@@ -35,7 +38,7 @@
 
 .slider__item{
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: center;
     align-items: center;
 

@@ -1194,6 +1194,10 @@ h3 {
   overflow: hidden; }
 
 .slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3000px;
   position: absolute;
   top: 30%;
   left: 11%; }
@@ -1202,10 +1206,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
