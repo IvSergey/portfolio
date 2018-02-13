@@ -1196,7 +1196,7 @@ h3 {
 
 .burger-slide__btn-left {
   position: absolute;
-  left: 0;
+  left: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1209,10 +1209,16 @@ h3 {
     width: 1.625rem;
     height: 1.0625rem; }
 
-.burger-slide__content {
+.slider__list {
+  position: relative;
+  height: 100%;
+  width: 10000px; }
+
+.slider__item {
+  width: 940px;
   display: inline-block; }
   @media screen and (max-width: 868px) {
-    .burger-slide__content {
+    .slider__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1221,7 +1227,7 @@ h3 {
 
 .burger-slide__btn-right {
   position: absolute;
-  right: 0;
+  right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1279,6 +1285,10 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
