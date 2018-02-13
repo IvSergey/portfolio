@@ -123,7 +123,9 @@
   font-size: rem(14px);
   color: #ffffff;
   
-    
+       @include tablets() {
+        width: 95%;
+    }
 
       @include phones() {
         display: none;

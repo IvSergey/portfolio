@@ -656,6 +656,9 @@ p {
 .reviews__text {
   font-size: 0.875rem;
   color: #ffffff; }
+  @media screen and (max-width: 768px) {
+    .reviews__text {
+      width: 95%; } }
   @media screen and (max-width: 480px) {
     .reviews__text {
       display: none; } }
