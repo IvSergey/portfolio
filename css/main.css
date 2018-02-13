@@ -103,8 +103,7 @@ p {
 .section {
   overflow: hidden;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.31);
-  min-height: 40.625rem; }
+  background-color: rgba(0, 0, 0, 0.31); }
 
 .natural {
   background: url("../img/background/bg-first.jpg") center center no-repeat;
@@ -1189,12 +1188,15 @@ h3 {
   height: 100vh; }
 
 .burger-slide__container {
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row; }
 
 .burger-slide__btn-left {
+  position: absolute;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1208,14 +1210,7 @@ h3 {
     height: 1.0625rem; }
 
 .burger-slide__content {
-  height: 100%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  display: inline-block; }
   @media screen and (max-width: 868px) {
     .burger-slide__content {
       -webkit-box-orient: vertical;
@@ -1225,6 +1220,8 @@ h3 {
       text-align: center; } }
 
 .burger-slide__btn-right {
+  position: absolute;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1244,10 +1241,7 @@ h3 {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  align-items: center; }
   @media screen and (max-width: 868px) {
     .slide__decor {
       width: 90%;
@@ -1275,7 +1269,7 @@ h3 {
   font-family: Gagalin;
   font-size: 0.875rem;
   position: absolute;
-  top: 10.625rem;
+  top: 0;
   left: 0;
   width: 5.625rem;
   height: 5.625rem;
@@ -1285,10 +1279,6 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1309,7 +1299,7 @@ h3 {
 
 .slide__decor-kkal {
   position: absolute;
-  bottom: 10.625rem;
+  bottom: 0;
   left: 0;
   min-width: 4.375rem;
   min-height: 5rem;

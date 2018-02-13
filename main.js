@@ -119,37 +119,6 @@ gamb.addEventListener('click', function() {
 
 
 
-// $(document).ready(function() {
-  
-// 	$('#accordeon').on('click', f_acc);
-// });
- 
-// function f_acc(e){
-
-// 	if(e.target.className === "team__name") {
-
-// 		$('.team__accordeon-inner--active').not($(this).next()).slideUp(1000);
-
-//     	$(this).next().slideToggle(500);
-// 	}
-
-  
-// }
-
-
-// let accoTeam = document.getElementById('accordeon');
-
-// accoTeam.addEventListener('click', function(e) {
-// 	let target = e.target;
-//     if (accordeon.classList.contains('team__accordeon-inner--active')) {
-//     	accordeon.classList.remove('team__accordeon-inner--active');
-        
-//     }
-//     else {
-//     	  accordeon.classList.add('team__accordeon-inner--active');
-        
-//     }
-// });
 
 
 //gorizont accordion
@@ -212,7 +181,7 @@ openMenu.addEventListener("click", function (e) {
 // 		return;
 // 	}
 
-// 	const containerElement = document.createElement("div");
+// 	const containerElement = document.createElement("reviews-popup");
 //  	containerElement.classList.add("reviews-popup--active");
 
 //  	// document.body.appendChild(containerElement);
