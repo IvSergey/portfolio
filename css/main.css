@@ -306,6 +306,7 @@ p {
   font-weight: 500;
   line-height: 1.75rem;
   text-align: center;
+  padding-bottom: 0.625rem;
   padding-top: 0.5625rem; }
   @media screen and (max-width: 480px) {
     .advantages__subtitle {
@@ -1187,6 +1188,10 @@ h3 {
   position: relative;
   height: 100vh; }
 
+@media screen and (max-width: 868px) {
+  .burger-slide__container {
+    width: 90%; } }
+
 .slider {
   position: relative;
   width: 100%;
@@ -1199,7 +1204,7 @@ h3 {
   display: flex;
   width: 5000px;
   position: absolute;
-  top: 30%;
+  height: 100%;
   overflow: hidden; }
 
 .slider__item {
@@ -1212,6 +1217,21 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (max-width: 868px) {
+    .slider__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .slide__content {
   position: relative;
@@ -1226,7 +1246,23 @@ h3 {
   -ms-flex-align: center;
   align-items: center;
   max-width: 940px;
-  width: 95%; }
+  width: 95%;
+  height: 100%; }
+  @media screen and (max-width: 868px) {
+    .slide__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .slide__decor {
   width: 50%;
@@ -1238,24 +1274,15 @@ h3 {
   align-items: center; }
   @media screen and (max-width: 868px) {
     .slide__decor {
-      width: 90%;
-      padding-top: 15%; } }
-  @media screen and (max-width: 480px) {
-    .slide__decor {
-      width: 100%;
-      padding-top: 45%; } }
-  @media screen and (max-width: 425px) {
-    .slide__decor {
-      padding-top: 50%; } }
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; } }
 
 .slide__decor-banner {
   width: 100%; }
 
 .slide-pic {
   width: 100%; }
-  @media screen and (max-width: 868px) {
-    .slide-pic {
-      width: 85%; } }
 
 .slide__decor-burger {
   border: none;
@@ -1285,10 +1312,6 @@ h3 {
   justify-content: center;
   -webkit-text-decoration: uppercase;
   text-decoration: uppercase; }
-  @media screen and (max-width: 868px) {
-    .slide__decor-burger {
-      top: 4%;
-      left: 8%; } }
 
 .burger__svg {
   fill: #fff;
@@ -1321,12 +1344,6 @@ h3 {
   -webkit-text-decoration: uppercase;
   text-decoration: uppercase;
   opacity: .5; }
-  @media screen and (max-width: 868px) {
-    .slide__decor-kkal {
-      top: 5%;
-      right: 8%;
-      bottom: auto;
-      left: auto; } }
 
 .kkal__count {
   position: absolute;
@@ -1339,16 +1356,6 @@ h3 {
 
 .slide__desc {
   width: 50%; }
-  @media screen and (max-width: 868px) {
-    .slide__desc {
-      width: 80%;
-      padding-top: 5%; } }
-  @media screen and (max-width: 480px) {
-    .slide__desc {
-      width: 95%; } }
-  @media screen and (max-width: 425px) {
-    .slide__desc {
-      padding-top: 10%; } }
 
 .slide__title {
   margin-bottom: 2.5625rem;
@@ -1357,10 +1364,6 @@ h3 {
   font-size: 4.5rem;
   font-weight: 400;
   line-height: 3.9375rem; }
-  @media screen and (max-width: 480px) {
-    .slide__title {
-      font-size: 3.125rem;
-      margin-bottom: 0; } }
 
 .slide__text {
   color: #ffffff;
@@ -1375,24 +1378,12 @@ h3 {
   color: #e35028;
   display: inline-block;
   margin-right: 1.875rem; }
-  @media screen and (max-width: 868px) {
-    .slide__price {
-      top: 0; } }
-  @media screen and (max-width: 480px) {
-    .slide__price {
-      margin-right: 0; } }
-  @media screen and (max-width: 425px) {
-    .slide__price {
-      font-size: 3.125rem; } }
 
 .slide__price-rub {
   font-size: 1.875rem;
   -webkit-text-decoration: uppercase;
   text-decoration: uppercase;
   margin-left: -0.9375rem; }
-  @media screen and (max-width: 425px) {
-    .slide__price-rub {
-      font-size: 1.25rem; } }
 
 .slider__controls {
   z-index: 5;
@@ -1408,7 +1399,7 @@ h3 {
   justify-content: space-between; }
 
 .burger-slide__btn-next {
-  left: 5%;
+  left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1422,7 +1413,7 @@ h3 {
     height: 1.0625rem; }
 
 .burger-slide__btn-prev {
-  right: 5%;
+  right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

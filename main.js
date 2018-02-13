@@ -122,10 +122,10 @@ gamb.addEventListener('click', function() {
 
 
 //gorizont accordion
-let currentMenu;
-let openMenu = document.getElementById("gorizont-accordeon");
-openMenu.addEventListener("click", function (e) {
-	let target = e.target;
+// let currentMenu;
+// let openMenu = document.getElementById("gorizont-accordeon");
+// openMenu.addEventListener("click", function (e) {
+// 	let target = e.target;
 	// if(!target.classList.contains('menu__bg')) {
 	// 	return;
 	// }
@@ -142,32 +142,32 @@ openMenu.addEventListener("click", function (e) {
 	// }
 
 
-	if(target.classList.contains('menu__bg')) {
-		if (target.nextElementSibling.classList.contains('menu__text-active')) {
-		current = null;
-		target.nextElementSibling.classList.toggle('menu__text-active');
-		} else {
-			if (current) {
-				current.nextElementSibling.classList.toggle('menu__text-active')
-			}
-			current = target;
-			current.nextElementSibling.classList.toggle('menu__text-active');
-		}
-	} else if (target.classList.contains('menu__subtitle')) {
-		if (target.parentNode.nextElementSibling.classList.contains('menu__text-active')) {
-		current = null;
-		target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
-		} else {
-			if (current) {
-				target.parentNode.nextElementSibling.classList.toggle('menu__text-active')
-			}
-			current = target;
-			target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
-		}
-	} else {
-		return;
-	}
-});
+// 	if(target.classList.contains('menu__bg')) {
+// 		if (target.nextElementSibling.classList.contains('menu__text-active')) {
+// 		current = null;
+// 		target.nextElementSibling.classList.toggle('menu__text-active');
+// 		} else {
+// 			if (current) {
+// 				current.nextElementSibling.classList.toggle('menu__text-active')
+// 			}
+// 			current = target;
+// 			current.nextElementSibling.classList.toggle('menu__text-active');
+// 		}
+// 	} else if (target.classList.contains('menu__subtitle')) {
+// 		if (target.parentNode.nextElementSibling.classList.contains('menu__text-active')) {
+// 		current = null;
+// 		target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
+// 		} else {
+// 			if (current) {
+// 				target.parentNode.nextElementSibling.classList.toggle('menu__text-active')
+// 			}
+// 			current = target;
+// 			target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
+// 		}
+// 	} else {
+// 		return;
+// 	}
+// });
 
 
 // overlay
@@ -280,3 +280,9 @@ $(function () {
 
 
 });
+
+
+let openMenu = document.getElementsByClassName('menu__item');
+for(let i = 0, i < openMenu.length, i++){
+	console.log(openMenu[i]);
+}
