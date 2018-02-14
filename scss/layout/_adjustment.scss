@@ -1,9 +1,12 @@
-/*.wraper{
+.wrapper{
+  position: relative;
 	height: 100%;
-    min-width: 1100px;
-}*/
+  width: 100%;
+    overflow: hidden;
+}
 
 .maincontent {
+  
   height: 100%;
   min-height: 650px;
 }

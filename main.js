@@ -51,20 +51,7 @@ function init() {
 	});
 }
 
-// let gamb = document.getElementById("gamb-menu");
 
-
-
-// gamb.addEventListener("click", function(e) { 
-// 	var header__navigation--active = document.getElementById("navigation");
-// 	if (header__navigation--active.style.display = 'flex') {
-
-// 		gamb__btn--active.style.display = 'none';
-
-// 	}
-
-
-//  });
 
 let gamb = document.getElementById('gamb-menu');
 
@@ -82,11 +69,6 @@ gamb.addEventListener('click', function() {
 });
 
  
-    // navigation.addEventListener( "wheel",function( e ) {
-
-    //    e.preventDefault();
-
-    // });
 
 
 
@@ -121,73 +103,12 @@ gamb.addEventListener('click', function() {
 
 
 
-//gorizont accordion
-// let currentMenu;
-// let openMenu = document.getElementById("gorizont-accordeon");
-// openMenu.addEventListener("click", function (e) {
-// 	let target = e.target;
-	// if(!target.classList.contains('menu__bg')) {
-	// 	return;
-	// }
 
-	// if (target.nextElementSibling.classList.contains('menu__text-active')) {
-	// 	current = null;
-	// 	target.nextElementSibling.classList.toggle('menu__text-active');
-	// } else {
-	// 	if (current) {
-	// 		current.nextElementSibling.classList.toggle('menu__text-active')
-	// 	}
-	// 	current = target;
-	// 	current.nextElementSibling.classList.toggle('menu__text-active');
-	// }
-
-
-// 	if(target.classList.contains('menu__bg')) {
-// 		if (target.nextElementSibling.classList.contains('menu__text-active')) {
-// 		current = null;
-// 		target.nextElementSibling.classList.toggle('menu__text-active');
-// 		} else {
-// 			if (current) {
-// 				current.nextElementSibling.classList.toggle('menu__text-active')
-// 			}
-// 			current = target;
-// 			current.nextElementSibling.classList.toggle('menu__text-active');
-// 		}
-// 	} else if (target.classList.contains('menu__subtitle')) {
-// 		if (target.parentNode.nextElementSibling.classList.contains('menu__text-active')) {
-// 		current = null;
-// 		target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
-// 		} else {
-// 			if (current) {
-// 				target.parentNode.nextElementSibling.classList.toggle('menu__text-active')
-// 			}
-// 			current = target;
-// 			target.parentNode.nextElementSibling.classList.toggle('menu__text-active');
-// 		}
-// 	} else {
-// 		return;
-// 	}
-// });
 
 
 // overlay
 
-// let openOverlay = document.getElementById('overlay');
 
-// openOverlay.addEventListener("click", function(e) {
-// 	let target = e.target;
-
-// 	if(!target.classList.contains('reviews-popup')) {
-// 		return;
-// 	}
-
-// 	const containerElement = document.createElement("reviews-popup");
-//  	containerElement.classList.add("reviews-popup--active");
-
-//  	// document.body.appendChild(containerElement);
-
-// 	console.log("----")
-// })
 
 $(()=> {
   var reviewsPopup = $(".reviews-popup"),
@@ -284,22 +205,51 @@ $(function () {
 
 
 
-			let openMenu = document.getElementsByClassName('menu__bg');
-			let openText = document.getElementsByClassName('menu__text');
-				for(let i = 0; i < openMenu.length; i++){
-					openMenu[i].addEventListener('click', function () {
-			let target = openMenu[i];
-				for(let j = 0; j < openText.length; j++){
 
+
+	let openMenu = document.getElementsByClassName('menu__bg');
+	let openText = document.getElementsByClassName('menu__text');
+	for(let i = 0; i < openMenu.length; i++){
+		openMenu[i].addEventListener('click', function () {
+			for(let j = 0; j < openText.length; j++){
+				openText[j].classList.remove('menu__text-active');
 				if (i === j){
-				
-				
-				if (openText[j].classList.contains('menu__text-active')){
-					openText[j].classList.remove('menu__text-active');
+					openText[j].classList.add('menu__text-active');
+				} 
+			}
+		});
+}; 
 
 
-				}else (openText[j].classList.add('menu__text-active'))
-			 }
-    	} 
-	})
-};
+// onePageScroll
+
+// const sections = $('.section');
+// const display = $('.maincontent');
+
+
+// const performTransition = sectionEq => {
+// 	const position = '${sectionEq * -100}%';
+
+
+// 	console.log(position);
+// }
+
+// $(document).on('wheel', e => {
+// 	const deltaY = e.originalEvent.deltaY;
+// 	// листаем вниз
+// 	if (deltaY > 0) {
+// 		performTransition(3);
+
+// 	}
+
+// 	// листаем вверх
+// 	if (deltaY < 0){
+// 		console.log('вверх');
+
+// 	}
+// })
+
+
+$(document).on('wheel', e => {
+	console.log(e.originalEvent.deltaY);
+})

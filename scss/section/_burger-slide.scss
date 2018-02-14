@@ -27,15 +27,14 @@
 
 .slider__list{
   display: flex;
-  width: 5000px;
+  width: rem(5000px);
   position: absolute;
   height: 100%;
   overflow: hidden;
 
     //      @include tablets() {
 
-    //    flex-direction:column;
-    //    text-align: center;
+    //    width: 90%;
     // }
   
 }
