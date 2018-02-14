@@ -282,21 +282,38 @@ $(function () {
 });
 
 
+// let openMenu = document.getElementsByClassName('menu__bg');
+// let openText = document.getElementsByClassName('menu__text');
+// for(let i = 0; i < openMenu.length; i++){
+// 	openMenu[i].addEventListener('click', function (e) {
+// 		e.target === openMenu[i];
+// 		for(let j = 0; j < openText.length; j++){
+// 			console.log(openMenu[i],openText[j])
+// 			if (openMenu[i] === openText[j]){
+// 				console.log(i,j)
+// 			} 
+// 	// if (openText[j].classList.contains('menu__text--active')){
+// 	// 	openText[j].classList.remove('menu__text--active');
+		
+	
+// 	// }else (openText[j].classList.add('menu__text--active'))
+// }
+// })};
+
 let openMenu = document.getElementsByClassName('menu__bg');
 let openText = document.getElementsByClassName('menu__text');
 for(let i = 0; i < openMenu.length; i++){
-	openMenu[i].addEventListener('click', function (e) {
-		e.target === openMenu[i];
-		for(let j = 0; j < openText.length; j++){
-			console.log(openMenu[i],openText[j])
-			if (openMenu[i] === openText[j]){
-				console.log(i,j)
-			} 
-	// if (openText[j].classList.contains('menu__text--active')){
-	// 	openText[j].classList.remove('menu__text--active');
-		
-	
-	// }else (openText[j].classList.add('menu__text--active'))
+openMenu[i].addEventListener('click', function () {
+let target = openMenu[i];
+for(let j = 0; j < openText.length; j++){
+
+if (i === j){
+console.log(openText[j])
+} 
+if (openText[j].classList.contains('menu__text--active')){
+openText[j].classList.remove('menu__text--active');
+
+
+}else (openText[j].classList.add('menu__text--active'))
 }
 })};
-
