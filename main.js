@@ -282,7 +282,9 @@ $(function () {
 });
 
 
-let openMenu = document.getElementsByClassName('menu__item');
-for(let i = 0, i < openMenu.length, i++){
-	console.log(openMenu[i]);
-}
+// let openMenu = document.getElementsByClassName('menu__bg');
+// let openText = document.getElementsByClassName('menu__text');
+// for(let i = 0, i < openMenu.length, i++){
+// 	openMenu[i].addEventListener('click', function () {
+// 	console.log('click');	
+// }
