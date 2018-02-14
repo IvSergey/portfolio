@@ -284,7 +284,14 @@ $(function () {
 
 let openMenu = document.getElementsByClassName('menu__bg');
 let openText = document.getElementsByClassName('menu__text');
-for(let i = 0, i < openMenu.length, i++){
+for(let i = 0; i < openMenu.length; i++){
 	openMenu[i].addEventListener('click', function () {
-	console.log('click');	
-})
+		for(let j = 0; j < openText.length; j++){
+	if (openText[j].classList.contains('menu__text--active')){
+		openText[j].classList.remove('menu__text--active');
+		
+	
+	}else (openText[j].classList.add('menu__text--active'))
+}
+})};
+
