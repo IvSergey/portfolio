@@ -218,6 +218,7 @@ for (let i = 0; i < openMenu.length; i++) {
             if (activeClass) {
                 openText[i].classList.remove('menu__text-active');
             }
+             
         }
     });
 }
@@ -241,70 +242,114 @@ for (let i = 0; i < openMenu.length; i++) {
 
 // onePageScroll
 
-// const sections = $('.section');
-// const display = $('.maincontent');
-// let inScroll = false;
+const sections = $('.section');
+const display = $('.maincontent');
+let inScroll = false;
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
+const setActiveMenuItem = itemEq => {
+	$('.paginations__item').eq(itemEq).addClass('active')
+	.siblings().removeClass('active')
+}
 
 
-// const performTransition = sectionEq => {
-// 	const position = `${sectionEq * -100}%`;
+
+const performTransition = sectionEq => {
+	const position = `${sectionEq * -100}%`;
 
 
 
-// 	if (!inScroll){
+	if (inScroll) return;
 
-// 		inScroll = true;
-// 		sections.eq(sectionEq).addClass('active')
-// 		.siblings().removeClass('active');
+		inScroll = true;
+		sections.eq(sectionEq).addClass('active')
+		.siblings().removeClass('active');
 
-// 		display.css({
-// 			'transform' : `translate(0, ${position})`,
-// 			'-webkit-transform' : `translate(0, ${position})`
-// 		})
+		display.css({
+			'transform' : `translate(0, ${position})`,
+			'-webkit-transform' : `translate(0, ${position})`
+		})
 
-// 		setTimeout(() => {
-// 			inScroll = false;
-// 		}, 1300);
+		setTimeout(() => {
+			inScroll = false;
+			setActiveMenuItem(sectionEq);
+		}, 1300); //продожительность анимации +300 секунд, для невилирования инерции
 
-// 	}
 	
-// }
+	
+}
 
-// const scrollToSection = direction => {
-// 	const activeSection = sections.filter(".active");
-// 	const nextSection = activeSection.next();
-// 	const prevSection = activeSection.prev();
+const scrollToSection = direction => {
+	const activeSection = sections.filter(".active");
+	const nextSection = activeSection.next();
+	const prevSection = activeSection.prev();
 
 
-// 	if (direction === "up") {
-// 		performTransition(prevSection.index());
-// 	}
+	if (direction === "up" && prevSection.length) {
+		performTransition(prevSection.index());
+	}
 
-// 	if (direction === "down") {
-// 		performTransition(nextSection.index());
-// 	}
+	if (direction === "down" && nextSection.length) {
+		performTransition(nextSection.index());
+	}
 
-// };
+};
+
+
+
+$(document).on({
+	'wheel': e => {
+		const deltaY = e.originalEvent.deltaY;
+		const direction = deltaY > 0 
+		? 'down' 
+		: 'up'
+		
+		scrollToSection(direction);
+	},
+	keydown: e=> {
+		switch (e.keyCode){
+			case 40:
+			 scrollToSection('down');
+			break;
+
+			case 38:
+			 scrollToSection('up');
+			break;
+		}
+	},
+	touchmove: e => e.preventDefault()
+
+});
+
+	$('[data-scroll-to]').on('click', e => {
+
+		e.preventDefault();
+
+		const target = parseInt($(e.currentTarget).attr('data-scroll-to'));
+		
+		performTransition(target);
+	})
+
+	if (isMobile) {
+		$(document).swipe( {
+		    //Generic swipe handler for all directions
+		    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+
+		    	// плагин возвращает фактическое движение
+		    	// необходимо переназначение
+		    	const scrollDirection = direction === 'down' ? 'up' : 'down';
+
+		      	scrollToSection(scrollDirection); 
+	    	}
+	 	 });
+		
+	}
+
+
 
 
 // $(document).on('wheel', e => {
-// 	const deltaY = e.originalEvent.deltaY;
-
-// 	// листаем вниз
-// 	if (deltaY > 0) {
-// 		// performTransition(4);
-// 		scrollToSection('down');
-
-// 	}
-
-// 	// листаем вверх
-// 	if (deltaY < 0){
-// 		scrollToSection('up');
-
-// 	}
+// 	console.log(e);
 // })
-
-
-$(document).on('wheel', e => {
-	console.log(e);
-})
