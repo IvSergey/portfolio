@@ -80,6 +80,10 @@ p {
   overflow: hidden; }
 
 .maincontent {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  will-change: transform;
   height: 100%;
   min-height: 650px; }
 
@@ -337,7 +341,9 @@ p {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 0.625rem;
-  position: absolute; }
+  position: absolute;
+  z-index: 1;
+  top: 0; }
 
 .header__container {
   min-height: 100%; }
@@ -1103,7 +1109,8 @@ h3 {
   bottom: 0;
   background: url("../img/background/bg-footer.png");
   background-size: cover;
-  position: relative;
+  left: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

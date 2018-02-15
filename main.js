@@ -202,54 +202,109 @@ $(function () {
 
 });
 
+let openMenu = document.getElementsByClassName('menu__bg');
+let openText = document.getElementsByClassName('menu__text');
+
+for (let i = 0; i < openMenu.length; i++) {
+    openMenu[i].addEventListener('click', function () {
+        for (let y = 0; y < openText.length; y++) {
+            let activeClass = openText[i].classList.contains('menu__text-active');
+            if (!activeClass) {
+                for (let x = 0; x < openText.length; x++) {
+                    openText[x].classList.remove('menu__text-active');
+                    openText[i].classList.add('menu__text-active');
+                }
+            }
+            if (activeClass) {
+                openText[i].classList.remove('menu__text-active');
+            }
+        }
+    });
+}
 
 
 
 
-
-	let openMenu = document.getElementsByClassName('menu__bg');
-	let openText = document.getElementsByClassName('menu__text');
-	for(let i = 0; i < openMenu.length; i++){
-		openMenu[i].addEventListener('click', function () {
-			for(let j = 0; j < openText.length; j++){
-				openText[j].classList.remove('menu__text-active');
-				if (i === j){
-					openText[j].classList.add('menu__text-active');
-				} 
-			}
-		});
-}; 
+// 	let openMenu = document.getElementsByClassName('menu__bg');
+// 	let openText = document.getElementsByClassName('menu__text');
+// 	for(let i = 0; i < openMenu.length; i++){
+// 		openMenu[i].addEventListener('click', function () {
+// 			for(let j = 0; j < openText.length; j++){
+// 				openText[j].classList.remove('menu__text-active');
+// 				if (i === j){
+// 					openText[j].classList.add('menu__text-active');
+// 				} 
+// 			}
+// 		});
+// }; 
 
 
 // onePageScroll
 
 // const sections = $('.section');
 // const display = $('.maincontent');
+// let inScroll = false;
 
 
 // const performTransition = sectionEq => {
-// 	const position = '${sectionEq * -100}%';
+// 	const position = `${sectionEq * -100}%`;
 
 
-// 	console.log(position);
+
+// 	if (!inScroll){
+
+// 		inScroll = true;
+// 		sections.eq(sectionEq).addClass('active')
+// 		.siblings().removeClass('active');
+
+// 		display.css({
+// 			'transform' : `translate(0, ${position})`,
+// 			'-webkit-transform' : `translate(0, ${position})`
+// 		})
+
+// 		setTimeout(() => {
+// 			inScroll = false;
+// 		}, 1300);
+
+// 	}
+	
 // }
+
+// const scrollToSection = direction => {
+// 	const activeSection = sections.filter(".active");
+// 	const nextSection = activeSection.next();
+// 	const prevSection = activeSection.prev();
+
+
+// 	if (direction === "up") {
+// 		performTransition(prevSection.index());
+// 	}
+
+// 	if (direction === "down") {
+// 		performTransition(nextSection.index());
+// 	}
+
+// };
+
 
 // $(document).on('wheel', e => {
 // 	const deltaY = e.originalEvent.deltaY;
+
 // 	// листаем вниз
 // 	if (deltaY > 0) {
-// 		performTransition(3);
+// 		// performTransition(4);
+// 		scrollToSection('down');
 
 // 	}
 
 // 	// листаем вверх
 // 	if (deltaY < 0){
-// 		console.log('вверх');
+// 		scrollToSection('up');
 
 // 	}
 // })
 
 
 $(document).on('wheel', e => {
-	console.log(e.originalEvent.deltaY);
+	console.log(e);
 })

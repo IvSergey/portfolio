@@ -6,7 +6,9 @@
 }
 
 .maincontent {
-  
+  transition: 1s;
+  // transform: translateZ(0);
+  will-change: transform;
   height: 100%;
   min-height: 650px;
 }
