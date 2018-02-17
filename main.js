@@ -144,63 +144,73 @@ $(()=> {
 
 // slider
 
-$(function () {
+// $(function () {
 
-	var moveSlide = function (container, slideNum) {
-		items = container.find('.slider__item'),
-		activeSlide = items.filter('.active'),
-		reqItem = items.eq(slideNum),
-		reqIndex = reqItem.index(),
-		list = container.find('.slider__list'),
-		duration = 500;
+// 	var moveSlide = function (container, slideNum) {
+// 		items = container.find('.slider__item'),
+// 		activeSlide = items.filter('.active'),
+// 		reqItem = items.eq(slideNum),
+// 		reqIndex = reqItem.index(),
+// 		list = container.find('.slider__list'),
+// 		duration = 500;
 
-	if (reqItem.length) {
-		list.animate({
-			'left' : -reqIndex * 100 + '%'
-		}, duration, function () {
-			activeSlide.removeClass('active');
-			reqItem.addClass ('active');
-		});
+// 	if (reqItem.length) {
+// 		list.animate({
+// 			'left' : -reqIndex * 100 + '%'
+// 		}, duration, function () {
+// 			activeSlide.removeClass('active');
+// 			reqItem.addClass ('active');
+// 		});
 		
-		}
+// 		}
 
-	}
+// 	}
 
-	$('.burger-slide__btn').on('click', function(e){
-		e.preventDefault();
+// 	$('.burger-slide__btn').on('click', function(e){
+// 		e.preventDefault();
 
-		var $this = $(this),
-			container = $this.closest ('.slider'),
-			items = $('.slider__item', container),
-			activeItem = items.filter('.active'),
-			nextItem = activeItem.next(),
-			prevItem = activeItem.prev();
+// 		var $this = $(this),
+// 			container = $this.closest ('.slider'),
+// 			items = $('.slider__item', container),
+// 			activeItem = items.filter('.active'),
+// 			nextItem = activeItem.next(),
+// 			prevItem = activeItem.prev();
 
-		if ($this.hasClass('burger-slide__btn-next')){
+// 		if ($this.hasClass('burger-slide__btn-next')){
 
-			if(nextItem.length) {
-				moveSlide(container, nextItem.index());
-			} else{
-				moveSlide(container, items.first().index());
-			}
+// 			if(nextItem.length) {
+// 				moveSlide(container, nextItem.index());
+// 			} else{
+// 				moveSlide(container, items.first().index());
+// 			}
 
 			
 
-		} else{
-			if(prevItem.length) {
-				moveSlide(container, prevItem.index());
-			} else{
-				moveSlide(container, items.last().index());
-			}
+// 		} else{
+// 			if(prevItem.length) {
+// 				moveSlide(container, prevItem.index());
+// 			} else{
+// 				moveSlide(container, items.last().index());
+// 			}
 			
 
-		}
+// 		}
 
 		
+// 	});
+
+
+// });
+
+$(document).ready(function(){
+      $('.slider').bxSlider ({
+
+      	pager: false
+      });
+      	
 	});
 
 
-});
 
 let openMenu = document.getElementsByClassName('menu__bg');
 let openText = document.getElementsByClassName('menu__text');
@@ -353,3 +363,41 @@ $(document).on({
 // $(document).on('wheel', e => {
 // 	console.log(e);
 // })
+
+$('#order-form').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+    
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');
+
+    ajaxForm(form).done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    }).fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+
+};
+
+// Универсальная функция для работы с формами
+var ajaxForm = function (form) {
+    var data = form.serialize(),
+        url = form.attr('action');
+    
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        dataType : 'JSON',
+        data: data
+    })
+};

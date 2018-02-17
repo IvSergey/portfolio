@@ -48,7 +48,7 @@
      @include tablets ()
 
   {
-      
+     width: 14%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -75,7 +75,7 @@
       @include tablets ()
 
   {
-      
+       margin-right: rem(16px);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -91,20 +91,23 @@
 
 
 .slide__decor {
-    width: 50%;
+    width: 45%;
     display: flex;
     align-items: center;
+    margin-left: 45px;
+    margin-right: 10px;
 
        @include tablets() {
-       align-items:flex-start;
-       
+       width: 70%;
+       margin-left: 0px;
+       margin-right: 0px;
     }
    
-   //     @include phones() {
-   //     width: 100%;
-   //     padding-top: 45%;
+       @include phones() {
+       width: 80%;
+       padding-top: 20%;
        
-   //  }
+    }
    //           @media screen and (max-width: 425px) {
    //         padding-top: 50%;
    // }
@@ -117,54 +120,21 @@
 }
 .slide-pic{
   width: 100%;
-    // @include tablets() {
-    //    width: 85%;
-    //   } 
+    @include tablets() {
+       padding-top: 20%;;
+      } 
   
 }
 
 
 
-.slide__decor-burger {
-    border: none;
-    cursor: pointer;
-    font-family: Gagalin;
-    font-size: rem(14px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: rem(5px);
-    background: #ee832d;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: uppercase;
-    // margin-left: rem(83px);
-    //      @include tablets() {
 
-    //    top:4%;
-    //    left: 8%;
-    // }
-    
-
-}
-
-.burger__svg {
-    fill:#fff;
-    width: rem(45px);
-    height: rem(45px);
-}
 
 
 
 .slide__decor-kkal {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: rem(205px);
     min-width: rem(70px);
     min-height: rem(80px);
     font-family: Gagalin;
@@ -178,13 +148,13 @@
     text-decoration: uppercase;
     opacity: .5;
     
-    //     @include tablets() {
+        @include tablets() {
 
-    //     top: 5%;
-    //     right: 8%;
-    //     bottom: auto;
-    //     left: auto;
-    // }
+        top: 10%;
+        right: 8%;
+        bottom: auto;
+        left: auto;
+    }
 
    
 
@@ -202,19 +172,20 @@
 }
 
 .slide__desc{
-  width: 50%;
+  width: 45%;
 
-   //         @include tablets() {
-   //          width: 80%;
-   //          padding-top: 5%;
+           @include tablets() {
+              width: 80%;
+              padding-top: 8%;
+              text-align: center;
     
-   //  }
+    }
 
 
-   //          @include phones() {
-   //          width: 95%;
+    //         @include phones() {
+    //         padding-top: 15%;
               
-   //  }
+    // }
    //           @media screen and (max-width: 425px) {
    //         padding-top: 10%;
    // }
@@ -231,10 +202,10 @@
   line-height: rem(63px);
 
 
-  // @include phones() {
-  //           font-size: rem(50px);
-  //           margin-bottom: 0;
-  //         }
+  @include phones() {
+            font-size: rem(50px);
+            margin-bottom: 0;
+          }
 
      
 }
@@ -255,18 +226,18 @@
     display: inline-block;
     margin-right: rem(30px);
 
-   //      @include tablets() {
+        @include tablets() {
 
-   //     top:0;
-   //  }
-   //      @include phones() {
+       top:0;
+    }
+        @include phones() {
 
-   //     margin-right:0;
-   //  }
+       margin-right:0;
+    }
 
-   //       @media screen and (max-width: 425px) {
-   //     font-size: rem(50px);
-   // }
+         @media screen and (max-width: 425px) {
+       font-size: rem(50px);
+   }
 }
 
 .slide__price-rub {
@@ -320,3 +291,136 @@
     height: rem(17px);
     }
 }
+
+.bx-wrapper {
+    
+    box-shadow: 0 0 0 0;
+    border: none;
+    background: none;
+}
+
+
+
+.composition {
+  position: absolute;
+  top: rem(182px);
+  display: flex;
+  // top: 10rem;
+  z-index: 0;
+   @include tablets() {
+
+       top: 10%;
+       left: 8%;
+    }
+
+   
+  }
+
+.slide__decor-burger {
+  z-index: 1;
+  position: relative;
+    border: none;
+    cursor: pointer;
+    font-family: Gagalin;
+    font-size: rem(14px);
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
+    background: #ee832d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: uppercase;
+    transition: .4s;
+    &:hover{
+       background:#d66000;
+    }
+
+    &:hover  ~ .burgers__menu-list{
+
+      opacity: 1;
+    }
+
+   
+   
+         @include tablets() {
+
+       top: 10%;
+       left: 0;
+    }
+    
+
+}
+
+
+
+.burger__svg {
+    fill:#fff;
+    width: rem(45px);
+    height: rem(45px);
+
+
+
+
+ }
+
+.burgers__menu-list {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+   transition: all .4s;
+   opacity:  0;
+
+    
+
+    }
+
+.burgers__menu-list--active {
+  opacity: 1; }
+
+.burgers__menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+
+.burgers__menu-icon {
+
+  width: rem(30px);
+  height: rem(30px); 
+
+@include tablets () {
+  
+    width: 4rem;
+    height: 3rem; 
+  }
+}
+
+.burgers__menu-icon--beef {
+
+  fill: #e15431; }
+
+.burgers__icon--buns {
+  fill: #f6b641; }
+
+.burgers__icon--salad {
+  fill: #89c242; }
+
+.burgers__icon--sauce {
+  fill: #e15431; }
+
+.burgers__icon--cucumber {
+  fill: #89c242; }
+
+.burgers__icon--cheese {
+  fill: #f6b641; }
+
+.burgers__menu-name,
+.burgers__menu-weight {
+  color: #191919;
+  font-size: 1.4rem;
+  padding: 0.5rem; }
+
