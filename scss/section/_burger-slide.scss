@@ -299,6 +299,27 @@
     background: none;
 }
 
+.bx-wrapper .bx-prev
+
+{
+    left: 10px;
+    background: url('../img/icons/arrow-scroll prev.png') no-repeat;
+}
+
+.bx-wrapper .bx-next
+
+{
+    right: 10px;
+    background: url('../img/icons/arrow-scroll next.png') no-repeat;
+
+   
+}
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+     background-position: 0 0; 
+     
+
+}
 
 
 .composition {
@@ -384,7 +405,8 @@
 .burgers__menu-item {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center; 
+}
 
 
 .burgers__menu-icon {
@@ -394,33 +416,47 @@
 
 @include tablets () {
   
-    width: 4rem;
-    height: 3rem; 
+    width: rem(25px);
+    height: rem(25px); 
   }
 }
 
 .burgers__menu-icon--beef {
 
-  fill: #e15431; }
+  fill: #e15431; 
+}
 
 .burgers__icon--buns {
-  fill: #f6b641; }
+  fill: #f6b641; 
+}
 
 .burgers__icon--salad {
-  fill: #89c242; }
+  fill: #89c242; 
+}
 
 .burgers__icon--sauce {
-  fill: #e15431; }
+  fill: #e15431;
+}
 
 .burgers__icon--cucumber {
-  fill: #89c242; }
+  fill: #89c242; 
+}
 
 .burgers__icon--cheese {
-  fill: #f6b641; }
+  fill: #f6b641; 
+}
 
 .burgers__menu-name,
 .burgers__menu-weight {
   color: #191919;
-  font-size: 1.4rem;
-  padding: 0.5rem; }
+  font-size: rem(20px);
+  padding: rem(8px); 
+
+    @include tablets () {
+  
+    font-size: rem(15px);
+    
+  }
+
+}
 

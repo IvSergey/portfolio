@@ -1507,6 +1507,17 @@ h3 {
   border: none;
   background: none; }
 
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url("../img/icons/arrow-scroll prev.png") no-repeat; }
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url("../img/icons/arrow-scroll next.png") no-repeat; }
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+  background-position: 0 0; }
+
 .composition {
   position: absolute;
   top: 11.375rem;
@@ -1596,8 +1607,8 @@ h3 {
   height: 1.875rem; }
   @media screen and (max-width: 868px) {
     .burgers__menu-icon {
-      width: 4rem;
-      height: 3rem; } }
+      width: 1.5625rem;
+      height: 1.5625rem; } }
 
 .burgers__menu-icon--beef {
   fill: #e15431; }
@@ -1620,8 +1631,12 @@ h3 {
 .burgers__menu-name,
 .burgers__menu-weight {
   color: #191919;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   padding: 0.5rem; }
+  @media screen and (max-width: 868px) {
+    .burgers__menu-name,
+    .burgers__menu-weight {
+      font-size: 0.9375rem; } }
 
 .header__navigation {
   position: absolute;

@@ -41,16 +41,22 @@
 
     $mail = mail('imas.spb@mail.ru', 'Заказ', $mail_message, $headers);
 
-    $data = [];
+    // $data = [];
 
-    if ($mail) {
-        $data['status'] = "OK";
-        $data['mes'] = "Письмо успешно отправлено";
+    // if ($mail) {
+    //     $data['status'] = "OK";
+    //     $data['mes'] = "Письмо успешно отправлено";
+    // }else{
+    //     $data['status'] = "NO";
+    //     $data['mes'] = "На сервере произошла ошибка";
+    // }
+
+    // echo json_encode($data);
+
+    if($mail) {
+        echo 'done';
     }else{
-        $data['status'] = "NO";
-        $data['mes'] = "На сервере произошла ошибка";
+        echo 'error';
     }
-
-    echo json_encode($data);
 
 ?>
