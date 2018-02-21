@@ -106,13 +106,15 @@ p {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.section {
+  height: 100%; }
+
 .natural {
   background: url("../img/background/bg-first.jpg") center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  height: 100vh; }
+  display: flex; }
 
 @media screen and (max-width: 868px) {
   .natural__container {
@@ -206,8 +208,7 @@ p {
 
 .best {
   background: url("../img/background/bg.png") center bottom no-repeat;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
 
 @media screen and (max-width: 868px) {
   .best__container {
@@ -532,7 +533,6 @@ p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 100vh;
   position: relative; }
 
 .reviews__container {
@@ -671,8 +671,7 @@ p {
   background: url("../img/background/bg-photo.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 .team__container {
   position: absolute;
@@ -835,8 +834,7 @@ a {
   background: url("../img/background/bg-menu.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 .menu__container {
   -webkit-box-orient: horizontal;
@@ -977,7 +975,6 @@ h3 {
 .order {
   background: url("../img/background/bg-texture.png") center center no-repeat;
   background-size: cover;
-  height: 100vh;
   position: relative; }
 
 .order__container {
@@ -1152,8 +1149,7 @@ h3 {
 
 .map {
   background-size: cover;
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 .map__yandex {
   width: 100%;
@@ -1254,8 +1250,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  height: 100vh; }
+  position: relative; }
 
 @media screen and (max-width: 868px) {
   .burger-slide__container {
