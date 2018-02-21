@@ -1587,7 +1587,8 @@ h3 {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-  opacity: 0; }
+  opacity: 0;
+  padding: 10px 10px; }
 
 .burgers__menu-list--active {
   opacity: 1; }
