@@ -336,8 +336,8 @@ $(document).on({
 			 scrollToSection('up');
 			break;
 		}
-	}
-	// touchmove: e => e.preventDefault()
+	},
+	touchmove: e => e.preventDefault()
 
 });
 
@@ -350,20 +350,20 @@ $(document).on({
 		performTransition(target);
 	})
 
-	// if (isMobile) {
-	// 	$(document).swipe( {
-	// 	    //Generic swipe handler for all directions
-	// 	    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+	if (isMobile) {
+		$(document).swipe( {
+		    //Generic swipe handler for all directions
+		    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 
-	// 	    	// плагин возвращает фактическое движение
-	// 	    	// необходимо переназначение
-	// 	    	const scrollDirection = direction === 'down' ? 'up' : 'down';
+		    	// плагин возвращает фактическое движение
+		    	// необходимо переназначение
+		    	const scrollDirection = direction === 'down' ? 'up' : 'down';
 
-	// 	      	scrollToSection(scrollDirection); 
-	//     	}
-	//  	 });
+		      	scrollToSection(scrollDirection); 
+	    	}
+	 	 });
 		
-	// }
+	}
 
 
 
