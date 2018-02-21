@@ -107,7 +107,11 @@ p {
   flex-direction: column; }
 
 .section {
-  height: 100%; }
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  width: 100vw;
+  min-height: 40.625rem; }
 
 .natural {
   background: url("../img/background/bg-first.jpg") center center no-repeat;
