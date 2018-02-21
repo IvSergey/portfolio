@@ -336,8 +336,8 @@ $(document).on({
 			 scrollToSection('up');
 			break;
 		}
-	},
-	touchmove: e => e.preventDefault()
+	}
+	// touchmove: e => e.preventDefault()
 
 });
 
