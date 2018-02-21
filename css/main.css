@@ -106,11 +106,6 @@ p {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.section {
-  overflow: hidden;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.31); }
-
 .natural {
   background: url("../img/background/bg-first.jpg") center center no-repeat;
   background-size: cover;
