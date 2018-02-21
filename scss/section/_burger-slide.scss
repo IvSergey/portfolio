@@ -150,7 +150,14 @@
     
         @include tablets() {
 
-        top: 10%;
+        top: 6%;
+        right: 8%;
+        bottom: auto;
+        left: auto;
+    }
+       @include phones() {
+
+        top: 11%;
         right: 8%;
         bottom: auto;
         left: auto;
@@ -244,9 +251,9 @@
     font-size: rem(30px);
     text-decoration: uppercase;
     margin-left: rem(-15px);
-   //        @media screen and (max-width: 425px) {
-   //         font-size: rem(20px);
-   // }
+          @media screen and (max-width: 425px) {
+           font-size: rem(20px);
+   }
 }
 
 
@@ -330,7 +337,12 @@
   z-index: 0;
    @include tablets() {
 
-       top: 10%;
+       top: 6%;
+       left: 8%;
+    }
+     @include phones() {
+
+       top: 11%;
        left: 8%;
     }
 
@@ -370,8 +382,17 @@
 
        top: 10%;
        left: 0;
+       
     }
-    
+
+
+        @include phones() {
+
+       top: 0;
+       left: 0;
+       width: rem(70px);
+       height: rem(70px);
+    }
 
 }
 

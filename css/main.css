@@ -431,6 +431,9 @@ p {
   transition: .4s; }
   .order-link:hover {
     background-color: #c44825; }
+  @media screen and (max-width: 360px) {
+    .order-link {
+      margin: 0 0.5rem; } }
 
 .gamb__btn {
   position: relative;
@@ -1396,7 +1399,13 @@ h3 {
   opacity: .5; }
   @media screen and (max-width: 868px) {
     .slide__decor-kkal {
-      top: 10%;
+      top: 6%;
+      right: 8%;
+      bottom: auto;
+      left: auto; } }
+  @media screen and (max-width: 480px) {
+    .slide__decor-kkal {
+      top: 11%;
       right: 8%;
       bottom: auto;
       left: auto; } }
@@ -1458,6 +1467,9 @@ h3 {
   -webkit-text-decoration: uppercase;
   text-decoration: uppercase;
   margin-left: -0.9375rem; }
+  @media screen and (max-width: 425px) {
+    .slide__price-rub {
+      font-size: 1.25rem; } }
 
 .slider__controls {
   z-index: 5;
@@ -1526,7 +1538,11 @@ h3 {
   z-index: 0; }
   @media screen and (max-width: 868px) {
     .composition {
-      top: 10%;
+      top: 6%;
+      left: 8%; } }
+  @media screen and (max-width: 480px) {
+    .composition {
+      top: 11%;
       left: 8%; } }
 
 .slide__decor-burger {
@@ -1567,6 +1583,12 @@ h3 {
     .slide__decor-burger {
       top: 10%;
       left: 0; } }
+  @media screen and (max-width: 480px) {
+    .slide__decor-burger {
+      top: 0;
+      left: 0;
+      width: 4.375rem;
+      height: 4.375rem; } }
 
 .burger__svg {
   fill: #fff;

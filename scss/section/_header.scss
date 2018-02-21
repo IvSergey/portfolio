@@ -135,7 +135,9 @@
     background-color: #c44825;
   }
 
-
+          @media screen and (max-width: 360px) {
+           margin: 0 rem(8px);
+   }
     
 }
 
